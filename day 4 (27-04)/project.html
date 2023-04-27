@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My HTML Project</title>
+    <link rel="icon" type="image/png"
+        href="E:\vanshh\coding\saeculum training\vansh-html-css\assets\favicon\favicon.ico">
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My HTML Project</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are a company that specializes in providing high-quality web development services to clients around
+                the world.</p>
+            <figure>
+                <img src="about.jpg" alt="About Us">
+                <figcaption>Our team at work</figcaption>
+            </figure>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Web design</li>
+                <li>Web development</li>
+                <li>Search engine optimization</li>
+                <li>Social media marketing</li>
+            </ul>
+            <table>
+                <caption>Our Pricing</caption>
+                <thead>
+                    <tr>
+                        <th>Service</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Web design</td>
+                        <td>₹50000</td>
+                    </tr>
+                    <tr>
+                        <td>Web development</td>
+                        <td>₹150000</td>
+                    </tr>
+                    <tr>
+                        <td>Search engine optimization</td>
+                        <td>₹20000</td>
+                    </tr>
+                    <tr>
+                        <td>Social media marketing</td>
+                        <td>₹10000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message"></textarea><br><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2023. All rights reserved.</p>
+        <svg width="20" height="20">
+            <use xlink:href="icons.svg#facebook"></use>
+        </svg>
+        <svg width="20" height="20">
+            <use xlink:href="icons.svg#twitter"></use>
+        </svg>
+        <svg width="20" height="20">
+            <use xlink:href="icons.svg#instagram"></use>
+        </svg>
+    </footer>
+
+</body>
+
+</html>

@@ -9,19 +9,19 @@
 </head>
 
 <body>
-    <form action="action.html" target="_blank" align="center">
+    <form action="action.html" target="_self" align="center">
         <fieldset>
             <legend>Student Information</legend><br>
             <label>First Name:</label><br><br>
             <input type="First Name" placeholder="ENTER FIRST NAME"><br><br>
             <label>Last Name:</label><br><br>
             <input type="Last Name" placeholder="ENTER LAST NAME"><br><br>
-
             <label>Gender:</label><br><br>
-            <input type="radio" id="G1" name="Gender" required>
+            <input type="radio" for="G1" id="G1" name="Gender" required>
             <label for="G1">Male</label>
-            <input type="radio" id="G2" name="Gender" required>
+            <input type="radio" for="G2" id="G2" name="Gender" required>
             <label for="G2">Female</label><br><br>
+            <label">Email ID: </label>
             <input type="Email ID" placeholder="ENTER EMAIL ID"><br><br>
             <label>Password:</label>
             <input type="password" name="password" required>
