@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selectors</title>
+    <style>
+        .link:active {
+            color: yellowgreen;
+        }
+
+        .link:link {
+            color: rgb(34, 88, 70);
+            background-color: wheat;
+        }
+
+        .link:visited {
+            color: violet;
+            /* background-color: brown; */
+        }
+
+        button:hover {
+            border: 2px solid salmon;
+            border-radius: 7px;
+            cursor: pointer;
+            background-color: beige;
+        }
+
+        div p:first-child {
+            color: tomato;
+        }
+
+        div p:last-child {
+            color: steelblue;
+        }
+
+        div p:nth-child(4) {
+            color: rgb(39, 176, 62);
+        }
+
+        div p:nth-child(even) {
+            background-color: antiquewhite;
+        }
+
+        div p:nth-child(odd) {
+            background-color: cornsilk;
+        }
+
+        form input:checked + label {
+            border: 1px solid rgb(129, 95, 95) !important;
+            border-radius: 5px;
+            /* color: cornflowerblue; */
+            background-color: rgb(176, 242, 43);
+            /* display: block; */
+        }
+
+        input[type="email"]:focus {
+            background-color: beige;
+            border-radius: 5px;
+            /* display: block; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="https://www.saeculumsolutions.com" target="_blank" class="link">This is Link Selectors</a>
+
+    <br><br>
+
+    <button>This is Hover</button>
+
+    <div>
+        <p>text1</p>
+        <p>text2</p>
+        <p>text3</p>
+        <p>text4</p>
+        <p>text5</p>
+        <p>text6</p>
+    </div>
+
+    <form action="">
+
+        <input type="checkbox" name="Select" id="Select">
+        <label for="Select">Are you there?</label>
+
+        <br><br>
+
+        <label for="mail">Enter your Email:</label>
+        <input type="email" name="Email" id="mail">
+
+    </form>
+</body>
+
+</html>
