@@ -1,16 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Display Property</title>
     <style>
-        p{
+        div {
+            margin: 30px 5px 0px 5px;
+        }
+
+        #d1 span {
+            display: inline;
+            background-color: bisque;
+        }
+
+        #d2 span {
+            display: block;
+            background-color: bisque;
+        }
+
+        #d3 span {
+            display: flex;
+            background-color: bisque;
+        }
+
+        #d4 span {
+            display: inline-flex;
+            background-color: bisque;
+        }
+
+        #d5 span {
+            display: inline-block;
+            background-color: bisque;
+        }
+
+        #d6 span {
+            display: none;
+            background-color: bisque;
+        }
+
+        #d7 span {
+            display: grid;
+            background-color: bisque;
         }
     </style>
 </head>
+
 <body>
-    
+    <div id="d1">this is <span>display inline</span></div>
+    <div id="d2">this is <span>display block</span></div>
+    <div id="d3">this is <span>display flex</span></div>
+    <div id="d4">this is <span>inline flex</span></div>
+    <div id="d5">this is <span>inline block</span></div>
+    <div id="d6">this is <span>display none</span></div>
+    <div id="d7">this is <span>display grid</span></div>
 </body>
+
 </html>
