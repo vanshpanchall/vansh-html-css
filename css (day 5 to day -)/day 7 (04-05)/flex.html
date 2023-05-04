@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Flex</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 15px;
+        }
+        .cont{
+            background-color: beige;
+            border: 2px solid rebeccapurple;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            /* height: 60vh; */
+            /* flex-direction: column; */
+            /* flex-direction:column-reverse; */
+            flex-direction: row;
+            /* flex-direction: row-reverse; */
+            /* flex-wrap: nowrap; */
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+        }
+        .flex0{
+            margin: 20px;
+            height: 100px;
+            width: 150px;
+        }
+
+        #flex1 {
+            background-color: tomato;
+        }
+
+        #flex2 {
+            background-color: aquamarine;
+        }
+
+        #flex3 {
+            background-color: yellow;
+        }
+
+        #flex4 {
+            background-color: springgreen;
+        }
+
+        #flex5 {
+            background-color:teal;
+        }
+
+        #flex6 {
+            background-color:burlywood;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <p class="flex0" id="flex1">1</p>
+        <p class="flex0" id="flex2">2</p>
+        <p class="flex0" id="flex3">3</p>
+        <p class="flex0" id="flex4">4</p>
+        <p class="flex0" id="flex5">5</p>
+        <p class="flex0" id="flex6">6</p>
+    </div>
+
+</body>
+
+</html>
