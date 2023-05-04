@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Display Property</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         div {
             margin: 30px 5px 0px 5px;
         }
@@ -14,36 +18,50 @@
         #d1 span {
             display: inline;
             background-color: bisque;
+            padding: 20px;
+            margin: 30px;
         }
 
         #d2 span {
             display: block;
             background-color: bisque;
+            padding: 20px;
+            margin: 30px;
         }
 
         #d3 span {
             display: flex;
             background-color: bisque;
+            padding: 20px;
+            margin: 30px;
         }
 
         #d4 span {
             display: inline-flex;
             background-color: bisque;
+            padding: 20px;
+            margin: 30px;
         }
 
         #d5 span {
             display: inline-block;
             background-color: bisque;
+            padding: 20px;
+            margin: 30px;
         }
 
         #d6 span {
             display: none;
             background-color: bisque;
+            padding: 20px;
+            margin: 30px;
         }
 
         #d7 span {
             display: grid;
             background-color: bisque;
+            padding: 20px;
+            margin: 30px;
         }
     </style>
 </head>
@@ -55,7 +73,7 @@
     <div id="d4">this is <span>inline flex</span></div>
     <div id="d5">this is <span>inline block</span></div>
     <div id="d6">this is <span>display none</span></div>
-    <div id="d7">this is <span>display grid</span></div>
+    <div id="d7">this is <span>display grid</span><span>hii hii hii</span></div>
 </body>
 
 </html>
