@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 1</title>
+    <style>
+        body {
+            width: 99%;
+            height: 100%;
+            font-size: 30px;
+        }
+
+        header {
+            background-color: red;
+            height: 15vh;
+            margin: 2.5px;
+            text-align: center;
+        }
+
+        .main {
+            /* background-color:violet; */
+            display: flex;
+            /* margin: 2.5px; */
+            height: 67vh;
+            width: 100%;
+            text-align: center;
+        }
+
+        #cont1 {
+            /* background-color: cyan; */
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+        }
+
+        #cont11 {
+            background-color: yellowgreen;
+            margin: 2.5px;
+            height: 30%;
+        }
+
+        #cont12 {
+            background-color: gainsboro;
+            margin: 2.5px;
+            height: 40%;
+        }
+
+        #cont13 {
+            background-color: cadetblue;
+            margin: 2.5px;
+            height: 30%;
+        }
+
+        #cont2 {
+            background-color: blue;
+            width: 30%;
+            margin: 2.5px;
+        }
+
+        footer {
+            background-color: red;
+            height: 15vh;
+            margin: 2.5px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>Header</header>
+    <div class="main">
+        <div id="cont1">
+            <div id="cont11">Top</div>
+            <div id="cont12">Mid</div>
+            <div id="cont13">Bottom</div>
+        </div>
+        <div id="cont2">Primary</div>
+    </div>
+    <footer>Footer</footer>
+</body>
+
+</html>
