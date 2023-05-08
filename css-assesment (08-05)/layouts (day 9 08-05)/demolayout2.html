@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Layout 2</title>
+    <style>
+        body {
+            margin: 0%;
+        }
+
+        .main {
+            width: 100%;
+            height: 99vh;
+        }
+
+        #cont1 {
+            height: 12%;
+            /* width: 100%; */
+            display: flex;
+            /* background-color: grey; */
+            margin: 5px;
+            gap: 2.5px;
+        }
+
+        #cont11 {
+            width: 20%;
+            background-color: teal;
+        }
+
+        #cont12 {
+            width: 80%;
+            background-color: teal;
+        }
+
+        .cont21 {
+            /* width: 100%; */
+            height: 15%;
+            display: flex;
+            flex-direction: row;
+            margin: 5px;
+            gap: 10px;
+            /* background-color: aqua; */
+            justify-content: space-between;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: row;
+            width: 18%;
+            height: 100%;
+            background-color:yellow;
+        }
+
+        #cont3 {
+            height: 20%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        #cont31 {
+            width: 33%;
+            margin: 5px;
+            background-color:tan;
+        }
+
+        #cont32 {
+            width: 33%;
+            margin: 5px;
+            background-color: tan;
+        }
+
+        #cont33 {
+            width: 33%;
+            margin: 5px;
+            background-color: tan;
+        }
+
+        #footer {
+            height: 4%;
+            margin: 5px;
+            background-color: teal;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div id="cont1">
+            <div id="cont11">logo</div>
+            <div id="cont12">nav</div>
+        </div>
+        <div class="cont21">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="cont21">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="cont21">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="cont21">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div id="cont3">
+            <div id="cont31"></div>
+            <div id="cont32"></div>
+            <div id="cont33"></div>
+        </div>
+        <footer id="footer">footer</footer>
+    </div>
+</body>
+
+</html>

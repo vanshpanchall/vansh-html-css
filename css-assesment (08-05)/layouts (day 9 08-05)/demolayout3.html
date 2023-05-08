@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Layout 3</title>
+    <style>
+        .main-container {
+            height: 98vh;
+            width: 100%;
+            font-size: 30px;
+        }
+
+        header {
+            background-color: thistle;
+            height: 10%;
+            margin: 2.5px;
+            text-align: center;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: row-reverse;
+            height: 80%;
+            width: 100%;
+            text-align: center;
+        }
+
+        #cont1 {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+        }
+
+        #cont11 {
+            display: flex;
+            margin: 2.5px;
+            gap: 5px;
+            height: 30%;
+        }
+
+        #cont111 {
+            background-color: grey;
+            width: 30%;
+        }
+
+        #cont112 {
+            background-color: teal;
+            width: 40%;
+        }
+
+        #cont113 {
+            background-color: slategrey;
+            width: 30%;
+        }
+
+        #cont12 {
+            background-color: skyblue;
+            margin: 2.5px;
+            height: 40%;
+        }
+
+        #cont13 {
+            background-color: sandybrown;
+            margin: 2.5px;
+            height: 30%;
+        }
+
+        #cont2 {
+            background-color: wheat;
+            width: 20%;
+            margin: 2.5px;
+        }
+
+        footer {
+            background-color: thistle;
+            height: 10%;
+            margin: 2.5px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <header>Header</header>
+        <div class="main">
+            <div id="cont1">
+                <div id="cont11">
+                    <div id="cont111">Left</div>
+                    <div id="cont112">Center</div>
+                    <div id="cont113">Right</div>
+                </div>
+                <div id="cont12">Mid</div>
+                <div id="cont13">Lower</div>
+            </div>
+            <div id="cont2">Nav</div>
+        </div>
+        <footer>Footer</footer>
+    </div>
+</body>
+
+</html>
