@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Layout 1</title>
+    <style>
+        body {
+            margin: 0%;
+            font-size: 35px;
+            text-align: center;
+            background-color: black;
+        }
+
+        .main {
+            width: 100%;
+            height: 99vh;
+        }
+
+        header {
+            height: 10%;
+            background-color: sandybrown;
+            margin: 5px;
+        }
+
+        #cont1 {
+            height: 50%;
+            margin: 5px;
+            gap: 5px;
+            display: flex;
+            flex-direction: row;
+            /* background-color: antiquewhite; */
+        }
+
+        #cont11 {
+            width: 30%;
+            height: 100%;
+            gap: 5px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #child11 {
+            height: 40%;
+            background-color: cadetblue;
+        }
+
+        #child12 {
+            height: 60%;
+            background-color: yellow;
+        }
+
+        #cont12 {
+            width: 70%;
+            height: 100%;
+            gap: 5px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #child21 {
+            height: 60%;
+            background-color: springgreen;
+        }
+
+        #child22 {
+            height: 40%;
+            background-color: tomato;
+        }
+
+        #cont2 {
+            height: 30%;
+            margin: 5px;
+            gap: 5px;
+            display: flex;
+            flex-direction: row;
+            /* background-color: antiquewhite; */
+        }
+
+        #cont21 {
+            width: 70%;
+            height: 100%;
+            background-color: blue;
+        }
+
+        #cont22 {
+            width: 30%;
+            height: 100%;
+            background-color: burlywood;
+        }
+
+        footer {
+            height: 8%;
+            background-color: sandybrown;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <header>header</header>
+        <div id="cont1">
+            <div id="cont11">
+                <div id="child11">some texts</div>
+                <div id="child12">sidebar</div>
+            </div>
+            <div id="cont12">
+                <div id="child21">main content</div>
+                <div id="child22">extras</div>
+            </div>
+        </div>
+        <div id="cont2">
+            <div id="cont21">img</div>
+            <div id="cont22">posts</div>
+        </div>
+        <footer>footer</footer>
+    </div>
+</body>
+
+</html>
