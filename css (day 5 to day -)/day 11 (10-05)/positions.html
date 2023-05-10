@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positions</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        .main {
+            height: 200vh;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+        }
+
+        .container {
+            height: 30%;
+            width: 90%;
+            display: flex;
+            gap: 15px;
+            position: relative;
+            bottom: 0;
+            left: 25px;
+            background-color: bisque;
+            border: 8px solid goldenrod;
+        }
+        .static, .absolute, .relative, .fixed, .sticky{
+            height: 10%;
+            width: 15%;
+            margin-inline: auto;
+            background-color: yellow;
+            border: 5px solid teal;
+        }
+        .static{
+            position: static;
+        }
+        .absolute{
+            position: absolute;
+            bottom: 70%;
+            right: 17%;
+        }
+        .relative{
+            position: relative;
+            top: 45%;
+        }
+        .fixed{
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+        .sticky{
+            position: sticky;
+            top: 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="box static">This is Static (default)</div>
+            <div class="box absolute">This is Absolute (can change its position as per parent)</div>
+            <div class="box relative">This is Relative (moves from its original position)</div>
+            <div class="box fixed">This is Fixed (used for chat bots)</div>
+            <div class="box sticky">This is Sticky</div>
+        </div>
+    </div>
+</body>
+
+</html>

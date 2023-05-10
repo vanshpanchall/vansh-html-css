@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        .main {
+            height: 100vh;
+            /* background-color: black; */
+            display: flex;
+            position: relative;
+        }
+        .index1{
+            width: 25%;
+            height: 25%;
+            background-color: tomato;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            z-index: 1;
+        }
+        .index2{
+            width: 25%;
+            height: 25%;
+            background-color: greenyellow;
+            position: absolute;
+            top: 5%;
+            left: 20%;
+            z-index: 2;
+        }
+        .index3{
+            width: 25%;
+            height: 25%;
+            text-align: center;
+            background-color: blueviolet;
+            position: absolute;
+            top: 10%;
+            left: 40%;
+            z-index: 0;
+        }
+        .index4{
+            width: 25%;
+            height: 25%;
+            text-align: center;
+            background-color:turquoise;
+            position: absolute;
+            top: 15%;
+            left: 60%;
+            z-index: -1;
+        }
+        .index1, .index2, .index3, .index4{
+            border: 5px solid grey;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="index1">This has Z-index 1</div>
+        <div class="index2">This has Z-index 2</div>
+        <div class="index3">This has Z-index 0</div>
+        <div class="index4">This has Z-index -1</div>
+    </div>
+</body>
+
+</html>

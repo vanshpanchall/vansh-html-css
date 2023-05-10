@@ -2,7 +2,7 @@
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
-  font-size: 25px;
+  /* font-size: 25px; */
   font-family: Georgia, "Times New Roman", Times, serif;
   text-transform: uppercase;
 }
@@ -11,37 +11,45 @@ body {
   width: 100vw;
   height: 100vh;
 }
-.navbar {
+header{
   height: 10%;
+}
+.navbar {
+  width: 90%;
+  height: 100%;
   background-color: oldlace;
   display: flex;
+  margin-inline: auto;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 5px solid gainsboro;
+  /* border-bottom: 5px solid gainsboro; */
 }
 .logo {
-  width: 15%;
-  padding-left: 25px;
-  color: teal;
+  color: cadetblue;
   text-decoration: overline;
 }
 .logo a {
+  color: teal;
   text-decoration: none;
 }
 .items {
-  width: 70%;
-  height: 10%;
+  width: 50%;
+  height: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
-.items a {
+.items a{
+  color:cadetblue;
   text-decoration: none;
+}
+.logo:hover, .items a:hover, .login button:hover{
+  text-decoration: overline dotted 2px olivedrab;
+  /*background-color: yellowgreen;*/
 }
 .login button {
   width: 120px;
   height: 40px;
-  margin-right: 25px;
   text-align: center;
   background-color: teal;
   border: 2px solid teal;
@@ -60,15 +68,16 @@ body {
   background-color: oldlace;
 }
 .section {
-  width: 100%;
+  width: 90%;
   height: 100%;
-  display: flex;
+  /* display: flex;
   justify-content: center;
+  align-items: center; */
   margin-top: 20px;
-  /* align-items: center; */
+  margin-inline: auto;
 }
 .main {
-  width: 80%;
+  width: 100%;
   height: 50%;
   gap: 10px;
   display: flex;
@@ -109,7 +118,7 @@ body {
 }
 
 .pic {
-  height: 80%;
+  height: 100%;
   width: 100%;
   cursor: pointer;
 }
