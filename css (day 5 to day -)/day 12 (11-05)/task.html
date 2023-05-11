@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 100vh;
+            font-size: 30px;
+        }
+
+        .main {
+            height: 100%;
+            background-color: bisque;
+            position: relative;
+        }
+
+        .text1 {
+            color: blue;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        .text2 {
+            color: blue;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+        }
+        .text3 {
+            color: blue;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+        }
+        .text4 {
+            color: blue;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 1;
+        }
+        .text5 {
+            color: blue;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="text1">Top Left</div>
+            <div class="text2">Top right</div>
+            <div class="text3">Bottom left</div>
+            <div class="text4">Bottom Right</div>
+            <div class="text5">Centered</div>
+        </div>
+    </div>
+</body>
+
+</html>
