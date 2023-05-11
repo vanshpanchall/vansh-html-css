@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            font-size: 80px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+
+        .container {
+            height: 100%;
+            background-color: rebeccapurple;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            width: 35%;
+            height: 35%;
+            color: whitesmoke;
+            background-color: rebeccapurple;
+            display: flex;
+            position: relative;
+        }
+
+        .box {
+            height: 100%;
+            width: 100%;
+            background-color: rebeccapurple;
+            border: 5px solid whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+        }
+
+        .box::before {
+            content: "";
+            position: absolute;
+            left: 5px;
+            top: 5px;
+            width: 98.2%;
+            height: 96.5%;
+            z-index: -1;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: all 0.5s;
+        }
+
+        .box:hover::before {
+            background-color: tomato;
+            transform: scaleX(1);
+        }
+
+        .box:hover {
+            color: rgb(60, 60, 60);
+            transition: all 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="box">SLIDE</div>
+        </div>
+    </div>
+</body>
+
+</html>
