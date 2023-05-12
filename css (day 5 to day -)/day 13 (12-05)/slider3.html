@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Top</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: indigo;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            padding: 70px 150px;
+            font-size: 80px;
+            color: white;
+            border: 10px solid white;
+            background-color: transparent;
+            overflow: hidden;
+            position: relative;
+        }
+
+        button::before {
+            content: "THANKS!";
+            position: absolute;
+            bottom: 100%;
+            right:0%;
+            width: 100%;
+            height: 100%;
+            font-size: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: tomato;
+            color: #000;
+            transition: all 300ms linear;
+        }
+
+        button:hover::before {
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <button>TOP</button>
+</body>
+
+</html>

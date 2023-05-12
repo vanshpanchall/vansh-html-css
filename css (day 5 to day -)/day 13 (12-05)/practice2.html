@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Hover 2</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: #ffc812;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            padding: 20px 150px;
+            /* border: 1px solid white; */
+            border: none;
+            background-color: transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn {
+            padding: 100px 0px;
+            font-size: 40px;
+            color: #1d1d1d;
+            background-color: transparent;
+        }
+
+        .slide1 {
+            position: absolute;
+            bottom: 0;
+            left: 100%;
+            height: 2%;
+            width: 50%;
+            z-index: -1;
+            background-color: #222040;
+            transition: all 300ms linear;
+        }
+
+        .btn:hover>.slide1 {
+            left: 50%;
+            /* bottom: 100%; */
+        }
+
+        .slide2 {
+            position: absolute;
+            top: 0;
+            right: 100%;
+            height: 2%;
+            width: 50%;
+            z-index: -1;
+            background-color: #222040;
+            transition: all 300ms linear;
+        }
+
+        .btn:hover>.slide2 {
+            right: 50%;
+        }
+
+        .slide3 {
+            position: absolute;
+            top: 100%;
+            right: 0%;
+            height: 50%;
+            width: 1%;
+            z-index: -1;
+            background-color: #222040;
+            transition: all 300ms linear;
+        }
+
+        .btn:hover>.slide3 {
+            top: 50%;
+        }
+
+        .slide4 {
+            position: absolute;
+            bottom: 100%;
+            left: 0%;
+            height: 50%;
+            width: 1%;
+            z-index: -1;
+            background-color: #222040;
+            transition: all 300ms linear;
+        }
+
+        .btn:hover>.slide4 {
+            bottom: 50%;
+            /* top: 50%; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <button>
+        <div class="btn">HOVER ME 🕸️
+            <div class="slide1"></div>
+            <div class="slide2"></div>
+            <div class="slide3"></div>
+            <div class="slide4"></div>
+        </div>
+    </button>
+</body>
+
+</html>
