@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 16/05</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .container {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #main {
+            height: 90%;
+            width: 95%;
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+        }
+
+        #cont1 {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 50%;
+            position: relative;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .text {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 10px;
+        }
+
+        #cont2 {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 25%;
+            gap: 5px;
+        }
+
+        #box1 {
+            height: 50%;
+            position: relative;
+        }
+
+        #box2 {
+            height: 50%;
+            position: relative;
+        }
+
+        #cont3 {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 25%;
+            gap: 5px;
+        }
+
+        #box2_1 {
+            height: 50%;
+            position: relative;
+        }
+
+        #box2_2 {
+            height: 50%;
+            position: relative;
+        }
+
+        button {
+            padding: 10px 15px;
+            color: white;
+            background-color: cornflowerblue;
+            border: 0px solid cornflowerblue;
+        }
+
+        h2 {
+            color: white;
+            font-size: 45px;
+            padding: 5px;
+        }
+
+        p {
+            color: darkgray;
+            font-size: 20px;
+            padding: 5px;
+        }
+
+        h3 {
+            color: white;
+            font-size: 25px;
+            padding: 5px;
+        }
+        .btn{
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="main">
+            <div id="cont1">
+                <img src="1.jpg" alt="image">
+                <div class="text">
+                    <div class="btn">
+                    <button>FRIENDS</button>
+                    </div>
+                    <h2>Lorem ipsum dolor sit consectetur, adipisicing elit. Repudiandae, illum.</h2>
+                    <p>May 16, 2023</p>
+                </div>
+            </div>
+            <div id="cont2">
+                <div id="box1">
+                    <img src="1.jpg" alt="image">
+                    <div class="text">
+                        <h3>Lorem ipsum dolor sit consectetur, adipisicing elit. Repudiandae, illum.</h3>
+                        <p>May 16, 2023</p>
+                    </div>
+                </div>
+                <div id="box2">
+                    <img src="1.jpg" alt="image">
+                    <div class="text">
+                        <h3>Lorem ipsum dolor sit consectetur, adipisicing elit. Repudiandae, illum.</h3>
+                        <p>May 16, 2023</p>
+                    </div>
+                </div>
+            </div>
+            <div id="cont3">
+                <div id="box2_1">
+                    <img src="1.jpg" alt="image">
+                    <div class="text">
+                        <h3>Lorem ipsum dolor sit consectetur, adipisicing elit. Repudiandae, illum.</h3>
+                        <p>May 16, 2023</p>
+                    </div>
+                </div>
+                <div id="box2_2">
+                    <img src="1.jpg" alt="image">
+                    <div class="text">
+                        <h3>Lorem ipsum dolor sit consectetur, adipisicing elit. Repudiandae, illum.</h3>
+                        <p>May 16, 2023</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

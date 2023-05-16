@@ -32,7 +32,7 @@
         .img3,
         .img4,
         .img5 {
-            height: 80%;
+            height: 70%;
             width: 100%;
             display: flex;
             align-items: end;
@@ -44,32 +44,42 @@
         .obf3,
         .obf4,
         .obf5 {
-            height: 50%;
+            height: 60%;
             width: 20%;
+            padding: 5px;
             background-color: slategray;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .img1 {
             object-fit: contain;
+            object-position: 0% 15%;
         }
 
         .img2 {
             object-fit: cover;
+            object-position: left;
         }
 
         .img3 {
             object-fit: fill;
+            object-position: right top;
         }
-        
+
         .img4 {
             object-fit: none;
+            object-position: left bottom;
         }
-        
+
         .img5 {
             object-fit: scale-down;
+            object-position: 0% 75%;
         }
 
         h3 {
+            height: 10%;
             padding: 10px 20px;
             color: black;
             background-color: white;
@@ -82,18 +92,23 @@
     <main class="container">
         <div class="obf1">
             <h3>Contain</h3><img src="1.png" alt="" class="img1">
+            <h3>Top 15%</h3>
         </div>
         <div class="obf2">
             <h3>Cover</h3><img src="1.png" alt="" class="img2">
+            <h3>Left</h3>
         </div>
         <div class="obf3">
             <h3>Fill</h3><img src="1.png" alt="" class="img3">
+            <h3>Right</h3>
         </div>
         <div class="obf4">
             <h3>None</h3><img src="1.png" alt="" class="img4">
+            <h3>Left Bottom</h3>
         </div>
         <div class="obf5">
             <h3>Scale-down</h3><img src="1.png" alt="" class="img5">
+            <h3>Bottom 75%</h3>
         </div>
     </main>
 </body>
