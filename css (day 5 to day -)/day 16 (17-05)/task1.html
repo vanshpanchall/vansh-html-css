@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous" />
+    <title>Task 1</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+        }
+
+        .container {
+            /* height: 60%; */
+            /* width: 100%; */
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            background-color: turquoise;
+            gap: 1rem;
+        }
+
+        .cont1 {
+            /* width: 100%; */
+            /* height: 15%; */
+            /* padding: 10px; */
+            /* background-color: turquoise; */
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+        .btn1 {
+            padding: 10px 30px;
+            color: black;
+            font-weight: 800;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .navi {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn2 {
+            /* padding: 10px 15px; */
+            width: 50px;
+            height: 50px;
+            color: black;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 50%;
+            gap: 20px;
+            cursor: pointer;
+        }
+
+        .cont2 {
+            /* width: 100%; */
+            /* height: 85%; */
+            /* padding: 10px; */
+            /* background-color: turquoise; */
+            display: flex;
+            gap: 20px;
+        }
+
+        .profile {
+            /* height: 100%; */
+            /* width: 25%; */
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+            border-radius: 15px;
+            position: relative;
+            gap: 10px;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        .btn3 {
+            position: absolute;
+            top: 5%;
+            right: 5%;
+            display: flex;
+            gap: 5px;
+        }
+
+        .btn3 button {
+            /* padding: 10px 15px; */
+            width: 40px;
+            height: 40px;
+            font-size: 15px;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 50%;
+        }
+
+        .btn4 {
+            padding: 10px 30px;
+            color: black;
+            font-weight: 800;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 25px;
+            position: absolute;
+            bottom: 5%;
+            left: 20%;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <div class="cont1">
+
+            <button class="btn1">Meet the Authors</button>
+
+            <div class="navi">
+                <button class="btn2">←</button>
+                <button class="btn2">→</button>
+            </div>
+
+        </div>
+
+
+        <div class="cont2">
+
+            <div class="profile">
+
+                <img src="1.jpg" alt="profile">
+
+                <div class="btn3"><button>
+                        <a href="#" target="_blank_"><i class="fab fa-twitter"></i></a>
+                    </button><button>
+                        <a href="#" target="_blank_"><i class="fab fa-facebook-f"></i></a>
+                    </button>
+                </div>
+
+                <button class="btn4">Jonathan Doe</button>
+
+            </div>
+
+            <div class="profile">
+
+                <img src="1.jpg" alt="profile">
+
+                <div class="btn3">
+                    <button>
+                        <a href="#" target="_blank_"><i class="fab fa-twitter"></i></a>
+                    </button><button>
+                        <a href="#" target="_blank_"><i class="fab fa-facebook-f"></i></a>
+                    </button>
+                </div>
+
+                <button class="btn4">Mary Buzard</button>
+
+            </div>
+
+            <div class="profile">
+
+                <img src="1.jpg" alt="profile">
+
+                <div class="btn3">
+                    <button>
+                        <a href="#" target="_blank_"><i class="fab fa-twitter"></i></a>
+                    </button>
+                    <button>
+                        <a href="#" target="_blank_"><i class="fab fa-facebook-f"></i></a>
+                    </button>
+                </div>
+
+                <button class="btn4">James Brawson</button>
+
+            </div>
+
+            <div class="profile">
+
+                <img src="1.jpg" alt="profile">
+
+                <div class="btn3">
+                    <button>
+                        <a href="#" target="_blank_"><i class="fab fa-twitter"></i></a>
+                    </button><button>
+                        <a href="#" target="_blank_"><i class="fab fa-facebook-f"></i></a>
+                    </button>
+                </div>
+
+                <button class="btn4">Joseph Francis</button>
+
+            </div>
+
+            <div class="profile">
+
+                <img src="1.jpg" alt="profile">
+
+                <div class="btn3">
+                    <button>
+                        <a href="#" target="_blank_"><i class="fab fa-twitter"></i></a>
+                    </button>
+                    <button>
+                        <a href="#" target="_blank_"><i class="fab fa-facebook-f"></i></a>
+                    </button>
+                </div>
+
+                <button class="btn4">Brenda Hitchell</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

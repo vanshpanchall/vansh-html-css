@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            display: flex;
+            align-items: center;
+        }
+
+        .container {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            /* padding: 5px; */
+        }
+
+        .shoes {
+            width: 20%;
+            border: 1px solid gainsboro;
+            padding: 10px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            gap: 70px;
+        }
+
+        .shoes .icon {
+            /* height:40px; */
+            /* width: 60px; */
+            /* display: flex; */
+            /* align-items: center; */
+            /* text-align: center; */
+            padding: 15px 5px;
+            font-size: 13px;
+            color: white;
+            position: absolute;
+            top: 5%;
+            right: 5%;
+            background-color: gray;
+            border-radius: 50px;
+        }
+
+        .shoes span {
+            padding: 14px 8px;
+            font-size: 13px;
+            color: white;
+            position: absolute;
+            top: 5%;
+            right: 5%;
+            background-color: tomato;
+            border-radius: 50%;
+        }
+
+        .shoes .linethrough {
+            text-decoration: line-through;
+        }
+
+        .shoes .price {
+            color: tomato;
+        }
+
+        .shoes .altprice {
+            display: flex;
+            gap: 5px;
+        }
+
+        /* .shoes .details {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        } */
+        h4{
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: gray;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="shoes">
+            <img src="4.png" alt="shoes">
+            <div class="details">
+                <h4>Nike Infinity Air</h4>
+                <p>$289.00</p>
+            </div>
+            <div class="icon">Sold Out</div>
+        </div>
+        <div class="shoes">
+            <img src="4.png" alt="shoes">
+            <div class="details">
+                <h4>Nike Infinity Air</h4>
+                <p>$289.00</p>
+            </div>
+        </div>
+        <div class="shoes">
+            <img src="4.png" alt="shoes">
+            <div class="details">
+                <h4>Nike Infinity Air</h4>
+                <p>$289.00</p>
+            </div>
+        </div>
+        <div class="shoes">
+            <img src="4.png" alt="shoes">
+            <div class="details">
+                <h4>Nike Infinity Air</h4>
+                <p>$289.00</p>
+            </div>
+        </div>
+        <div class="shoes">
+            <img src="4.png" alt="shoes">
+            <div class="details">
+                <h4>Nike Infinity Air</h4>
+                <p>$289.00</p>
+            </div>
+        </div>
+        <div class="shoes">
+            <img src="4.png" alt="shoes">
+            <div class="details">
+                <h4>Nike Infinity Air</h4>
+                <p>$289.00</p>
+            </div>
+        </div>
+        <div class="shoes">
+            <img src="4.png" alt="shoes">
+            <div class="details">
+                <h4>Nike Infinity Air</h4>
+                <p>$289.00</p>
+            </div>
+        </div>
+
+        <div class="shoes">
+            <img src="4.png" alt="shoes">
+            <div class="details">
+                <h4>Nike Infinity Air</h4>
+                <p>$289.00</p>
+            </div>
+        </div>
+        <div class="shoes">
+            <img src="4.png" alt="shoes">
+            <div class="details">
+                <h4>Nike Jordan Air</h4>
+                <p>$289.00</p>
+            </div>
+        </div>
+        <div class="shoes">
+            <img src="4.png" alt="shoes">
+            <div class="details">
+                <h4>Nike Jordan Air</h4>
+                <div class="altprice">
+                    <p class="linethrough">$289.00</p>
+                    <p class="price">$188.00</p>
+                </div>
+            </div>
+            <span>-15%</span>
+        </div>
+    </div>
+
+</body>
+
+</html>
