@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 18/05</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: mediumslateblue;
+        }
+
+        .container {
+            height: 100%;
+        }
+
+        .main {
+            height: 100%;
+            width: 55%;
+            margin: auto;
+            /* display: flex;
+            flex-direction: column; */
+            padding: 10px;
+        }
+
+        .box-left {
+            width: 40%;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+            text-align: end;
+            box-shadow: 10px 10px white;
+            position: relative;
+        }
+
+        .box-left::before {
+            content: "";
+            height: 10px;
+            width: 10px;
+            position: absolute;
+            top: 50%;
+            right: -15%;
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: 1px 1px 5px 5px white;
+        }
+
+        .box-right {
+            width: 40%;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+            box-shadow: 10px 10px white;
+            /* align-self: flex-end; */
+            margin-left: auto;
+            position: relative;
+        }
+
+        .box-right::before {
+            content: "";
+            height: 10px;
+            width: 10px;
+            position: absolute;
+            top: 50%;
+            left: -15%;
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: 1px 1px 5px 5px white;
+        }
+
+        h3,
+        p {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="box-left">
+                <h3>01</h3>
+                <h2>Resources</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eos non amet illo, commodi
+                    architecto.</p>
+            </div>
+            <div class="box-right">
+                <h3>02</h3>
+                <h2>Project Manager</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eos non amet illo, commodi
+                    architecto.</p>
+            </div>
+            <div class="box-left">
+                <h3>03</h3>
+                <h2>Quality Assurance</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eos non amet illo, commodi
+                    architecto.</p>
+            </div>
+            <div class="box-right">
+                <h3>04</h3>
+                <h2>Support Team</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eos non amet illo, commodi
+                    architecto.</p>
+            </div>
+            <div class="box-left">
+                <h3>05</h3>
+                <h2>Dedication</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eos non amet illo, commodi
+                    architecto.</p>
+            </div>
+            <div class="box-right">
+                <h3>06</h3>
+                <h2>Perfection</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eos non amet illo, commodi
+                    architecto.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

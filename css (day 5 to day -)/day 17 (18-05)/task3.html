@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3 18/05</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            /* background-color: mediumslateblue; */
+        }
+
+        .container {
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 40px 20px;
+        }
+
+        .main1 {
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: mediumslateblue;
+            font-size: 20px;
+        }
+
+        .purple {
+            padding: 5px 10px;
+            color: white;
+            border-radius: 5px;
+            background-color: mediumslateblue;
+        }
+
+        .main2 {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            padding-right: 20px;
+        }
+
+        .plans {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+        }
+
+        .sec {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        #Search {
+            padding: 5px 10px;
+            /* height: 25px; */
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 5px 15px;
+            background-color: white;
+            border: 1px solid rgb(212, 212, 212);
+            border-radius: 50px;
+        }
+
+        .plan-names {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .row {
+            display: flex;
+            gap: 3em;
+            padding: 10px 10px 10px 0px;
+        }
+
+        h4,
+        p {
+            width: 15%;
+        }
+        p{
+            color: gray;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main1">
+            <a href="#">Dashboard</a>
+            <a href="#">Users</a>
+            <a href="#" class="purple">Subscription plans</a>
+            <a href="#">Subscriptions</a>
+            <a href="#">Analytics</a>
+            <a href="#">Editor</a>
+            <a href="#">Blogs</a>
+        </div>
+        <div class="main2">
+            <div class="plans">
+                <div class="sec">
+                    <h1>All Plans</h1>
+                    <input type="search" name="Search" id="Search" placeholder="🔍">
+                    <span>⏳</span>
+                </div>
+                <button>New</button>
+            </div>
+            <div class="plan-names">
+                <div class="row">
+                    <h4>Name🔻</h4>
+                    <h4>Price Per Month</h4>
+                    <h4>Period</h4>
+                    <h4>Trial Period (Days)</h4>
+                </div>
+                <hr>
+                <div class="row">
+                    <p>Whole</p>
+                    <p>$834.0</p>
+                    <p>908</p>
+                    <p>128</p>
+                </div>
+                <hr>
+                <div class="row">
+                    <p>reemium plan</p>
+                    <p>$0.0</p>
+                    <p>98</p>
+                    <p>0</p>
+                </div>
+                <hr>
+                <div class="row">
+                    <p>Premium plan</p>
+                    <p>$1.99</p>
+                    <p>90</p>
+                    <p>0</p>
+                </div>
+                <hr>
+                <div class="row">
+                    <p>Sharing plan</p>
+                    <p>$5.99</p>
+                    <p>90</p>
+                    <p>0</p>
+                </div>
+                <hr>
+                <div class="row">
+                    <p>Sharing + plan</p>
+                    <p>$14.99</p>
+                    <p>90</p>
+                    <p>0</p>
+                </div>
+                <hr>
+                <div class="row">
+                    <p>Trial (DO NOT REMOVE)</p>
+                    <p>$0.0</p>
+                    <p>0</p>
+                    <p>0</p>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
