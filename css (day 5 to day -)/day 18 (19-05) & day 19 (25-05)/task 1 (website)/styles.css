@@ -9,6 +9,9 @@ body {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
+button{
+  cursor: pointer;
+}
 
 /* header */
 header {
@@ -345,7 +348,7 @@ section p {
 }
 .company-details > h5,
 li,
-p {
+.company-details > p {
   margin-bottom: 15px;
   list-style-type: none;
 }
@@ -442,14 +445,19 @@ footer p {
   }
   .project-name {
     width: 100%;
+    height: 65vh;
   }
   .about-company {
     /* width: 90%; */
     /* height: 100vh; */
     margin: auto;
     display: flex;
+    flex-direction: column-reverse;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+  }
+  .company-details{
+    width: 100%;
   }
 
   /* .content,

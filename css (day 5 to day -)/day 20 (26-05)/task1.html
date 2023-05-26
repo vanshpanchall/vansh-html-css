@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d54d9b941b.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <title>Task 1</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            font-family: "Poppins", sans-serif;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            object-fit: cover;
+        }
+
+        .container {
+            background-color: #f8f8f8;
+            display: flex;
+            gap: 1rem;
+            padding: 20px;
+        }
+
+        .tools {
+            width: 15%;
+        }
+
+        .items {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            border: 1px solid gainsboro;
+            border-radius: 5px;
+            padding: 15px;
+        }
+
+        .items>a {
+            color: dodgerblue;
+        }
+
+        main {
+            width: 70%;
+            height: 100%;
+            border: 1px solid gainsboro;
+            border-radius: 5px;
+        }
+
+        .profile {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .profile-details {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .bio>h2,
+        .bio>h4,
+        .bio>p {
+            padding-bottom: 8px;
+        }
+
+        .bio>button, .support>button{
+            padding: 8px 12px;
+            color: white;
+            background-color: dodgerblue;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .profile-type>span {
+            color: white;
+            background-color: grey;
+            border-radius: 5px;
+            padding: 2px;
+        }
+
+        .stg {
+            padding: 20px;
+            display: flex;
+        }
+
+        .stg>.border-ltr {
+            padding: 10px;
+            border: 1px solid gainsboro;
+            border-bottom: none;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .stg>.border-b {
+            width: 100%;
+            border-bottom: 1px solid gainsboro;
+        }
+
+        .user-form {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .user-form>.form1,
+        .col {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .row,
+        .form2 {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .r1,
+        .r2,
+        .change-password,
+        .stay-in-touch {
+            width: 50%;
+        }
+
+        .r1>input[type="text"],
+        .r2>input[type="text"],
+        .c1>input[type="email"],
+        .c2>textarea,
+        .change-password>input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 8px;
+            border: 1px solid gainsboro;
+            border-radius: 5px;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .change-password>h3,
+        .texts>h3,
+        .support>h4,
+        .support>p {
+            padding-bottom: 10px;
+        }
+
+        .texts>.checkbox,
+        .profile-type>p {
+            padding-top: 10px;
+        }
+
+        .texts {
+            width: 70%;
+            margin: auto;
+        }
+
+        .user-form>button {
+            padding: 10px 15px;
+            color: white;
+            background-color: dodgerblue;
+            border: none;
+            border-radius: 5px;
+            align-self: flex-end;
+        }
+        .logout-support{
+            width: 15%;
+        }
+        .logout-btn{
+            height: 8%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid gainsboro;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .logout-btn>button{
+            padding: 10px 40px;
+            font-size: 15px;
+            color: white;
+            background-color: grey;
+            border: none;
+            border-radius: 5px;
+        }
+        .support{
+            padding: 15px 10px;
+            border: 1px solid gainsboro;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="tools">
+            <div class="items">
+                <a href=""><i class="fa-regular fa-chart-bar"></i> Overview</a>
+                <a href=""><i class="fa-solid fa-grip"></i> CRUD</a>
+                <a href=""><i class="fa-solid fa-gear"></i> Settings</a>
+            </div>
+        </div>
+        <main>
+            <div class="profile">
+                <div class="profile-details">
+                    <img src="image.png" alt="profile pic">
+                    <div class="bio">
+                        <h2>John Smith</h2>
+                        <h4>@johnny.s</h4>
+                        <p>Last seen 2 hours ago</p>
+                        <button><i class="fa-solid fa-camera"></i> Change Photo</button>
+                    </div>
+                </div>
+                <div class="profile-type">
+                    <span>administrator</span>
+                    <p>Joined 09 Dec 2017</p>
+                </div>
+            </div>
+            <div class="stg">
+                <span class="border-ltr">Settings</span>
+                <div class="border-b"></div>
+            </div>
+            <div class="user-form">
+                <form action="" class="form1">
+                    <div class="row">
+                        <div class="r1">
+                            <label for="name">Full Name</label>
+                            <input type="text" name="" id="name" placeholder="John Smith">
+                        </div>
+                        <div class="r2">
+                            <label for="username">Username</label>
+                            <input type="text" name="" id="username" placeholder="johnny.s">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="c1">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="user@example.com">
+                        </div>
+                        <div class="c2">
+                            <label for="about">About</label>
+                            <textarea name="" id="about" cols="30" rows="5" placeholder="My Bio"></textarea>
+                        </div>
+                    </div>
+                </form>
+                <form action="" class="form2">
+                    <div class="change-password">
+                        <h3>Change Password</h3>
+                        <label for="current">Current Password</label>
+                        <input type="password" name="" id="current" placeholder="*****">
+                        <label for="new">New Password</label>
+                        <input type="password" name="" id="new" placeholder="*****">
+                        <label for="confirm">Confirm Password</label>
+                        <input type="password" name="" id="confirm" placeholder="*****">
+                    </div>
+                    <div class="stay-in-touch">
+                        <div class="texts">
+                            <h3>Keeping in Touch</h3>
+                            <p>Email Notification</p>
+                            <div class="checkbox">
+                                <p><input type="checkbox" name="" id="blog">
+                                    <label for="blog">Blog posts</label>
+                                </p>
+                                <p><input type="checkbox" name="" id="news">
+                                    <label for="news">Newsletter</label>
+                                </p>
+                                <p><input type="checkbox" name="" id="offers">
+                                    <label for="offers">Personal Offers</label>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <button>Save Changes</button>
+            </div>
+        </main>
+
+        <div class="logout-support">
+            <div class="logout-btn">
+                <button><i class="fa-solid fa-right-from-bracket"></i> Logout</button>
+            </div>
+            <div class="support">
+                <h4>Support</h4>
+                <p>Get fast, free help from our friendly assistants.</p>
+                <button>Contact Us</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

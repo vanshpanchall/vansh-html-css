@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            font-family: sans-serif;
+            background-color: gainsboro;
+        }
+
+        button {
+            padding: 10px 20px;
+            color: white;
+            background-color: indigo;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 2.3rem;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        .heading {
+            padding: 20px 0px;
+            text-align: center;
+        }
+
+        .plans {
+            width: 80%;
+            height: 70%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .cards {
+            width: 31%;
+            background-color: indigo;
+            border: none;
+            border-radius: 20px;
+            box-shadow: 1px 1px 8px 1px rgb(184, 184, 184);
+        }
+
+        .details {
+            height: 100%;
+            background-color: white;
+            border-radius: 20px;
+            border-bottom-right-radius: 35%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        .offerings {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: center;
+            padding-left: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="heading">
+        <h1>Pricing Plans</h1>
+        <p>It is a long established fact that a reader will be distracted bt the readable content of a page when looking
+            at its layout.</p>
+    </div>
+    <div class="plans">
+        <div class="cards">
+            <div class="details">
+                <div class="name">
+                    <h3>Starter</h3>
+                </div>
+                <div class="price">
+                    <h2>$0</h2>
+                    <p>/Monthly</p>
+                </div>
+                <div class="offerings">
+                    <p><b>15</b> website</p>
+                    <p><b>50GB</b> Disk Space</p>
+                    <p><b>50</b> Email</p>
+                    <p><b>50GB</b> Bandwidth</p>
+                    <p><b>10</b> Subdomains</p>
+                    <p><b>Unlimited</b> Support</p>
+                </div>
+                <div class="btn">
+                    <button>Order Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="details">
+                <div class="name">
+                    <h3>Personal</h3>
+                </div>
+                <div class="price">
+                    <h2>$29</h2>
+                    <p>/Monthly</p>
+                </div>
+                <div class="offerings">
+                    <p><b>15</b> website</p>
+                    <p><b>50GB</b> Disk Space</p>
+                    <p><b>50</b> Email</p>
+                    <p><b>50GB</b> Bandwidth</p>
+                    <p><b>10</b> Subdomains</p>
+                    <p><b>Unlimited</b> Support</p>
+                </div>
+                <div class="btn">
+                    <button>Order Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="details">
+                <div class="name">
+                    <h3>Ultimate</h3>
+                </div>
+                <div class="price">
+                    <h2>$49</h2>
+                    <p>/Monthly</p>
+                </div>
+                <div class="offerings">
+                    <p><b>15</b> website</p>
+                    <p><b>50GB</b> Disk Space</p>
+                    <p><b>50</b> Email</p>
+                    <p><b>50GB</b> Bandwidth</p>
+                    <p><b>10</b> Subdomains</p>
+                    <p><b>Unlimited</b> Support</p>
+                </div>
+                <div class="btn">
+                    <button>Order Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

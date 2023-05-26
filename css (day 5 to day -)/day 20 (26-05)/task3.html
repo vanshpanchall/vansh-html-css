@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: aliceblue;
+        }
+        .container{
+            width: 70%;
+            margin: auto;
+        }
+        h3{
+            color: aqua;
+            padding: 10px 0px;
+        }
+        .main{
+            display: flex;
+            gap: 1.5rem;
+        }
+        .days{
+            width: 45%;
+        }
+        .day1{
+            width: 100%;
+            color: white;
+            background-color: dodgerblue;
+            border-radius: 5px;
+            padding: 5px 10px;
+        }
+        .day2{
+            color: dodgerblue;
+            padding: 5px 10px;
+        }
+        .tasks{
+            width: 65%;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .task-details{
+            display:flex;
+            gap: 1rem;
+        }
+        .task-details>p{
+            width: 40%;
+            border-right: 3px solid gainsboro;
+            padding-right: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Schedule and Agenda</h3>
+        <div class="main">
+            <div class="days">
+                <div class="day1">
+                    <h4>Day 1</h4>
+                    <p>Mon, Jan 2, 2023</p>
+                </div>
+                <div class="day2">
+                    <h4>Day 2</h4>
+                    <p>Tue, Jan 3, 2023</p>
+                </div>
+            </div>
+            <div class="tasks">
+                <div class="task-details">
+                    <p>9:00AM - 10:00 AM</p>
+                    <div class="task-names">
+                        <h2>Registration and Coffee</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo aliquid, dolorem fugiat ipsum consequuntur et?</p>
+                    </div>
+                </div>
+                <div class="task-details">
+                    <p>9:00AM - 10:00 AM</p>
+                    <div class="task-names">
+                        <h2>Registration and Coffee</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo aliquid, dolorem fugiat ipsum consequuntur et?
+                        </p>
+                    </div>
+                </div>
+                <div class="task-details">
+                    <p>9:00AM - 10:00 AM</p>
+                    <div class="task-names">
+                        <h2>Registration and Coffee</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo aliquid, dolorem fugiat ipsum consequuntur et?
+                        </p>
+                    </div>
+                </div>
+                <div class="task-details">
+                    <p>9:00AM - 10:00 AM</p>
+                    <div class="task-names">
+                        <h2>Lunch Break</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo aliquid, dolorem fugiat ipsum consequuntur et?
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
