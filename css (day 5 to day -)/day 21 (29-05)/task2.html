@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* height: 100vh; */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        img {
+            max-width: 100%;
+            object-fit: cover;
+        }
+
+        label {
+            display: block;
+        }
+
+        .container {
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .left {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            padding: 1rem 2rem;
+        }
+
+        .contact>h3,
+        .payment>h3,
+        .shipping>h3,
+        .billing>h3 {
+            padding-bottom: 1rem;
+        }
+
+        .contact>input[type="email"],
+        .pd-r1>input[type="text"],
+        .sd-r1>input[type="text"] {
+            width: 70%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid gainsboro;
+            border-radius: 5px;
+        }
+
+        .payment-details,
+        .shipping-details {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .pd-r2,
+        .sd-r2 {
+            display: flex;
+            width: 70%;
+            gap: 10px;
+        }
+
+        .r1-flex1>input[type="text"],
+        .r1-flex2>input[type="text"],
+        .r2-flex2>input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid gainsboro;
+            border-radius: 5px;
+        }
+
+        .r1-flex1 {
+            width: 70%;
+        }
+
+        .r1-flex2 {
+            width: 30%;
+        }
+
+        .r2-flex2 {
+            width: 33.33%;
+        }
+
+        .btn {
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid gainsboro;
+            padding-top: 1.5rem;
+        }
+
+        .btn>button {
+            padding: 10px 15px;
+            color: white;
+            background-color: mediumblue;
+            border: none;
+            border-radius: 8px;
+        }
+
+        .right {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            background-color: whitesmoke;
+            padding: 1rem 2rem;
+        }
+
+        .cart {
+            display: flex;
+            gap: 15px;
+            border-bottom: 1px solid gainsboro;
+            padding: 1.5rem 0rem;
+        }
+
+        .cart>h3 {
+            margin-left: auto;
+        }
+
+        .sub-total {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 1rem;
+        }
+
+        .total {
+            border-top: 1px solid gainsboro;
+            padding-top: 1rem;
+        }
+
+        @media (max-width:650px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .left,
+            .right,
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="contact">
+                <h3>Contact Information</h3>
+                <label for="email">Email address</label>
+                <input type="email" name="" id="email">
+            </div>
+            <div class="payment">
+                <h3>Payment Details</h3>
+                <div class="payment-details">
+                    <div class="pd-r1">
+                        <label for="name">Name on card</label>
+                        <input type="text" name="" id="name">
+                    </div>
+                    <div class="pd-r1">
+                        <label for="card">Card number</label>
+                        <input type="text" name="" id="card">
+                    </div>
+                    <div class="pd-r2">
+                        <div class="r1-flex1">
+                            <label for="card-no">Expiration Date (MM/YY)</label>
+                            <input type="text" name="" id="card-no">
+                        </div>
+                        <div class="r1-flex2">
+                            <label for="cvc">CVC</label>
+                            <input type="text" name="" id="cvc">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shipping">
+                <h3>Shipping address</h3>
+                <div class="shipping-details">
+                    <div class="sd-r1">
+                        <label for="c-name">Company</label>
+                        <input type="text" name="" id="c-name">
+                    </div>
+                    <div class="sd-r1">
+                        <label for="add">Address</label>
+                        <input type="text" name="" id="add">
+                    </div>
+                    <div class="sd-r1">
+                        <label for="app">Appartment, Suite, etc</label>
+                        <input type="text" name="" id="app">
+                    </div>
+                    <div class="sd-r2">
+                        <div class="r2-flex2">
+                            <label for="city">City</label>
+                            <input type="text" name="" id="city">
+                        </div>
+                        <div class="r2-flex2">
+                            <label for="state">State / Province</label>
+                            <input type="text" name="" id="state">
+                        </div>
+                        <div class="r2-flex2">
+                            <label for="code">Postal Code</label>
+                            <input type="text" name="" id="code">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="billing">
+                <h3>Billing Information</h3>
+                <input type="checkbox" name="" id="same" checked>
+                <label for="same" style="display: inline;"> Same as shipping information</label>
+            </div>
+            <div class="btn">
+                <p>You won't be charged until the next step.</p>
+                <button>Continue</button>
+            </div>
+        </div>
+        <div class="right">
+            <div class="summary">
+                <h3>Order Summary</h3>
+                <div class="cart">
+                    <img src="bag.png" alt="">
+                    <div class="details">
+                        <h4>Micro Backpack</h4>
+                        <p>Moss</p>
+                        <p>5L</p>
+                    </div>
+                    <h3>$70.00</h3>
+                </div>
+                <div class="cart">
+                    <img src="bag1.png" alt="">
+                    <div class="details">
+                        <h4>Small stuff Satchel</h4>
+                        <p>Sond</p>
+                        <p>18L</p>
+                    </div>
+                    <h3>$180.00</h3>
+                </div>
+                <div class="cart">
+                    <img src="pic.png" alt="">
+                    <div class="details">
+                        <h4>Carry Clutch</h4>
+                        <p>White and Black</p>
+                        <p>Small</p>
+                    </div>
+                    <h3>$70.00</h3>
+                </div>
+            </div>
+            <div class="amount">
+                <div class="sub-total">
+                    <h4>Subtotal</h4>
+                    <h3>$320.00</h3>
+                </div>
+                <div class="sub-total">
+                    <h4>Shipping</h4>
+                    <h3>$15.00</h3>
+                </div>
+                <div class="sub-total">
+                    <h4>Taxes</h4>
+                    <h3>$26.80</h3>
+                </div>
+                <div class="total">
+                    <div class="sub-total">
+                        <h4>Total</h4>
+                        <h3>$361.80</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

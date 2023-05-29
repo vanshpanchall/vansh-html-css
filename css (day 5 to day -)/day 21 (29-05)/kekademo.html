@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keka Demo Website</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            background-color: #1b2531;
+        }
+
+        .navbar {
+            background-color: #2f394c;
+            padding: 15px;
+        }
+
+        .navbar>a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .main {
+            padding: 20px;
+        }
+
+        .card-wrapper-1,
+        .card-wrapper-2 {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .card1,
+        .card2 {
+            width: 50%;
+            padding: 15px;
+            background-color: #2f394c;
+            border: 0.5px solid darkslategrey;
+            border-radius: 5px;
+        }
+
+        .details>h2 {
+            color: white;
+            margin-bottom: 12px;
+        }
+
+        .details>p {
+            padding: 8px 10px;
+            color: tomato;
+            border: 1px solid tomato;
+            border-radius: 5px;
+        }
+
+        .card-wrapper-2 {
+            margin-top: 1.2rem;
+        }
+
+        .employee-card {
+            width: 25%;
+            padding: 15px;
+            background-color: #2f394c;
+            border: 0.5px solid darkslategrey;
+            border-radius: 5px;
+        }
+
+        .emp-card-details {
+            border-left: 3px solid cyan;
+            padding-left: 10px;
+        }
+
+        .emp-card-details>h2 {
+            width: 64%;
+            padding-top: 10px;
+            display: inline-block;
+            color: white;
+        }
+
+        .emp-card-details>p {
+            color: white;
+            font-size: 15px;
+        }
+
+        .emp-card-details>a {
+            color: mediumblue;
+            text-decoration: none;
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            .card-wrapper-1 {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .card1,
+            .card2 {
+                width: 100%;
+            }
+
+            .card-wrapper-2 {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .employee-card {
+                width: 47%;
+            }
+
+            .emp-card-details>h2 {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 490px) {
+            .employee-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="#">Summary</a>
+        </div>
+        <div class="main">
+            <div class="card-wrapper-1">
+                <div class="card1">
+                    <div class="details">
+                        <h2>Who is off today</h2>
+                        <p>No employee is off today.</p>
+                    </div>
+                </div>
+                <div class="card2">
+                    <div class="details">
+                        <h2>Not in yet today</h2>
+                        <p>All employees are already in.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wrapper-2">
+                <div class="employee-card">
+                    <div class="emp-card-details">
+                        <p>Employees On Time today</p>
+                        <h2>1</h2>
+                        <a href="#">View Employees</a>
+                    </div>
+                </div>
+                <div class="employee-card">
+                    <div class="emp-card-details">
+                        <p>Late Arrivals today</p>
+                        <h2>1</h2>
+                        <a href="#">View Employees</a>
+                    </div>
+                </div>
+                <div class="employee-card">
+                    <div class="emp-card-details">
+                        <p>Work from Home / On Duty today</p>
+                        <h2>0</h2>
+                    </div>
+                </div>
+                <div class="employee-card">
+                    <div class="emp-card-details">
+                        <p>Remote Clock-ins today</p>
+                        <h2>0</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
