@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e310527c70.js" crossorigin="anonymous"></script>
+    <title>Task 2</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            font-family: "Poppins", sans-serif;
+        }
+
+        img {
+            max-width: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .container {
+            height: 100%;
+            padding: 1rem;
+        }
+
+        .num-invoice {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid gainsboro;
+        }
+
+        a {
+            text-decoration: none;
+            color: mediumblue;
+        }
+
+        .main-order-type {
+            display: flex;
+            margin-top: 1.2rem;
+            gap: 1rem;
+        }
+/* 
+        .order-details {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+        } */
+
+        .order-name>p {
+            margin-block: 10px 2rem;
+            font-size: 15px;
+        }
+
+        .shipping {
+            display: flex;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid gainsboro;
+        }
+
+        .delivery,
+        .updates {
+            width: 50%;
+        }
+
+        .delivery>h4,
+        .updates>h4,
+        .updates>p {
+            margin-bottom: 12px;
+        }
+
+        .bar {
+            background-color:gainsboro;
+            border-radius: 25px;
+        }
+
+        .bar>div {
+            height: 10px;
+            width: 40%;
+            border-radius: 25px;
+            background-color: mediumblue;
+        }
+
+        .order-tracking>h4 {
+            margin-bottom: 1rem;
+        }
+
+        .tracking-details {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .tracking-details>p:nth-child(1),
+        .tracking-details>p:nth-child(2) {
+            color: mediumblue;
+        }
+
+        .tracking-details>p:nth-child(2) {
+            padding-left: 2rem;
+        }
+
+        .tracking-details>p:nth-child(3) {
+            padding-right: 2rem;
+        }
+
+        .order-tracking>.tracking-details {
+            padding-top: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="order-heading">
+            <h1>Order Details</h1>
+            <div class="num-invoice">
+                <p>Order Number <b>W086438695 • March 22, 2021</b></p>
+                <a href="">View Invoice <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+        <div class="main-order-type">
+            <div class="order-img">
+                <img src="tee.png" alt="">
+            </div>
+            <div class="order-details">
+                <div class="order-name">
+                    <h3>Distant Mountains Artwork Tee</h3>
+                    <b>$36.00</b>
+                    <p>You awake in a new, mysterious land. Mist hangs low along the distant mountains. What does it
+                        mean?</p>
+                </div>
+                <div class="shipping">
+                    <div class="delivery">
+                        <h4>Delivery Address</h4>
+                        <p>Floyd Miles</p>
+                        <p>7363 Cynthia Pass</p>
+                        <p>Toronto, ON N3Y 4H8</p>
+                    </div>
+                    <div class="updates">
+                        <h4>Shipping Updates</h4>
+                        <p>f***@example.com</p>
+                        <p>1*******40</p>
+                        <a href="">Edit</a>
+                    </div>
+                </div>
+                <div class="order-tracking">
+                    <h4>Processing on March 24, 2021</h4>
+                    <div class="bar">
+                        <div></div>
+                    </div>
+                    <div class="tracking-details">
+                        <p>Order placed</p>
+                        <p>Processing</p>
+                        <p>Shipped</p>
+                        <p>Delivered</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
