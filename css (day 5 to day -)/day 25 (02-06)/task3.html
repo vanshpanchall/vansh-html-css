@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 2rem;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            background-color: black;
+        }
+
+        div:nth-child(2),
+        div:nth-child(4) {
+            margin: 0px 10px;
+        }
+
+        .pic {
+            height: 100%;
+            width: 20%;
+            transition: 1s ease;
+            position: relative;
+
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 25px;
+            box-shadow: 1px 1px 10px 5px saddlebrown;
+        }
+
+        .pic:hover {
+            width: 200%;
+            cursor: pointer;
+        }
+
+        .pic::after {
+            color: white;
+            font-size: 25px;
+            position: absolute;
+            bottom: 2%;
+            right: 2%;
+            transition: 1s ease;
+            opacity: 0;
+        }
+
+        .nature::after {
+            content: "Nature";
+        }
+
+        .bird::after {
+            content: "Humming Bird";
+        }
+
+        .space::after {
+            content: "Space";
+        }
+
+        .leo::after {
+            content: "Angry Lion";
+        }
+
+        .hp::after {
+            content: "Harry Potter";
+        }
+
+        .pic:hover::after {
+            color: white;
+            font-size: 25px;
+            position: absolute;
+            bottom: 2%;
+            opacity: 1;
+            right: 90%;
+        }
+
+        .nature:hover::after {
+            content: "Nature";
+        }
+
+        .bird:hover::after {
+            content: "Humming Bird";
+        }
+
+        .space:hover::after {
+            content: "Space";
+        }
+
+        .leo:hover::after {
+            content: "Angry Lion";
+        }
+
+        .hp:hover::after {
+            content: "Harry Potter";
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pic nature">
+        <img src="https://images.pexels.com/photos/842711/pexels-photo-842711.jpeg?cs=srgb&dl=pexels-christian-heitz-842711.jpg&fm=jpg"
+            alt="">
+    </div>
+    <div class="pic bird">
+        <img src="https://wallpapercave.com/wp/wp3356602.jpg" alt="">
+    </div>
+    <div class="pic space">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/003/468/449/original/space-flight-through-the-orion-nebula-4k-3d-free-video.jpg"
+            alt="">
+    </div>
+    <div class="pic leo">
+        <img src="https://images8.alphacoders.com/712/712496.jpg" alt="">
+    </div>
+    <div class="pic hp">
+        <img src="https://wallpapercave.com/wp/wp9195811.jpg" alt="">
+    </div>
+</body>
+
+</html>

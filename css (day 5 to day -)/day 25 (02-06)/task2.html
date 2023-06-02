@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 2rem;
+            height: 100vh;
+            font-family: sans-serif;
+            display: flex;
+            align-items: center;
+        }
+
+        .cards {
+            margin-right: 10px;
+            position: relative;
+        }
+
+        .cards>h3>span {
+            margin-right: 15px;
+        }
+
+        .cards>h3 {
+            color: mediumblue;
+            margin-bottom: 2rem;
+
+        }
+
+        .cards>p {
+            color: grey;
+            font-size: 20px;
+            margin-top: 1rem;
+            line-height: 1.5;
+        }
+
+        .cards>h3::after {
+            content: "";
+            position: absolute;
+            top: 10px;
+            right: 0;
+            width: 60%;
+            height: 1px;
+            background-color: gainsboro;
+        }
+
+        @media (max-width:1200px) {
+            body {
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+            .cards {
+                width: 48%;
+            }
+        }
+
+        @media (max-width:615px) {
+            body {
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+
+            .cards {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <h3><span>•</span>Aug 2021</h3>
+        <h2>Founded company</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste mollitia necessitatibus dolorum fugit dolores,
+            tempore sequi vitae odit aliquam sed.</p>
+    </div>
+    <div class="cards">
+        <h3><span>•</span>Dec 2021</h3>
+        <h2>Secured $65m in funding</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste mollitia necessitatibus dolorum fugit dolores,
+            tempore sequi vitae odit aliquam sed.</p>
+    </div>
+    <div class="cards">
+        <h3><span>•</span>Feb 2022</h3>
+        <h2>Released beta</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste mollitia necessitatibus dolorum fugit dolores,
+            tempore sequi vitae odit aliquam sed.</p>
+    </div>
+    <div class="cards">
+        <h3><span>•</span>Dec 2022</h3>
+        <h2>Global launch of product</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste mollitia necessitatibus dolorum fugit dolores,
+            tempore sequi vitae odit aliquam sed.</p>
+    </div>
+</body>
+
+</html>

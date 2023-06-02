@@ -29,6 +29,7 @@
         }
 
         .container {
+            display: flex;
             height: 100%;
             border: 1px solid gainsboro;
             border-radius: 8px;
@@ -39,11 +40,13 @@
         }
 
         .left {
+            width: 25%;
             height: 100%;
             padding: 1rem;
             display: flex;
             flex-direction: column;
             gap: 2rem;
+            border-right: 1px solid gainsboro;
         }
 
         .main-nav,
@@ -84,6 +87,32 @@
             border: 1px solid gainsboro;
             border-radius: 5px;
         }
+
+        .right {
+            width: 75%;
+        }
+
+        .profile {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 2rem;
+        }
+
+        .profile>.search {
+            width: 70%;
+        }
+
+        .search>i {
+            width: 5%;
+        }
+
+        .search>input[type="search"] {
+            width: 90%;
+            color: grey;
+            font-size: 15px;
+            border: none;
+            padding: 0rem 1rem;
+        }
     </style>
 </head>
 
@@ -123,7 +152,21 @@
                 </div>
             </div>
         </div>
-        <div class="right"></div>
+        <div class="right">
+            <div class="profile">
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" name="" id="search" placeholder="Search..">
+                    <i class="fa-regular fa-bell"></i>
+                </div>
+                <div class="user-name">
+                    <div class="pic">
+                        <img src="tim.jpeg" alt="">
+                    </div>
+                    <h3>Tim Cook <i class="fa-solid fa-chevron-down"></i></h3>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
