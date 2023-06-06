@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <script src="https://kit.fontawesome.com/e310527c70.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        header {
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.2rem;
+            padding: 1rem;
+            position: relative;
+        }
+
+        .main-nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .main-nav>li>a {
+            padding: 1.5rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        .menu1 {
+            display: none;
+            margin-top: 2rem;
+        }
+
+        .drop-menu:hover>.menu1 {
+            display: block;
+        }
+
+        .menu1>li,
+        .menu-lvl-3>li {
+            padding: 1rem 0rem;
+            border-bottom: 1px solid gainsboro;
+        }
+
+        .menu1>li>a>i {
+            margin-left: 5rem;
+        }
+
+        .main-nav>li:hover>a,
+        .menu1>li:hover>a,
+        .menu-lvl-3>li:hover>a,
+        .lvl-4-child>li:hover>a,
+        .mega-menu>li:hover>a {
+            color: tomato;
+        }
+
+        .menu-lvl-2,
+        .menu-lvl-4 {
+            position: relative;
+        }
+
+        .menu-lvl-3 {
+            display: none;
+            position: absolute;
+            top: 0%;
+            right: -100%;
+        }
+
+        .menu-lvl-2:hover>.menu-lvl-3 {
+            display: block;
+        }
+
+        .menu-lvl-3>li>a {
+            padding-left: 2rem;
+        }
+
+        .menu-lvl-3>li>a>i {
+            padding-left: 5rem;
+        }
+
+        .lvl-4-child {
+            display: none;
+            position: absolute;
+            top: 0%;
+            right: -60%;
+        }
+
+        .lvl-4-child>li {
+            padding: 1rem 3rem;
+            border-bottom: 1px solid gainsboro;
+        }
+
+        .menu-lvl-4:hover>.lvl-4-child {
+            display: block;
+        }
+
+        .sub-menu {
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            left: 0;
+            top: 100%;
+            border: 1px solid gainsboro;
+            border-right: none;
+            box-shadow: 1px 1px 15px 1px gainsboro;
+        }
+
+        .sub-menu>.mega-menu {
+            width: 25%;
+        }
+
+        .mega-menu {
+            border-right: 1px solid gainsboro;
+            padding: 1.5rem;
+        }
+
+        .mega-menu>li {
+            padding: 10px 0px;
+        }
+
+        .sub-main {
+            display: none;
+        }
+
+        .main-mega-menu:hover>.sub-main {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo"><a href="#">LOGO</a></div>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="#">HOME</a></li>
+                <li class="drop-menu">
+                    <a href="#">DROPDOWN MENU
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </a>
+                    <ul class="menu1">
+                        <li><a href="">Menu Level 2 <i class="fa-solid fa-chevron-right"></i></a></li>
+
+                        <li class="menu-lvl-2">
+                            <a href="">Menu Level 2 <i class="fa-solid fa-chevron-right"></i></a>
+                            <ul class="menu-lvl-3">
+                                <li class="menu-lvl-4">
+                                    <a href="">Menu Level 3 <i class="fa-solid fa-chevron-right"></i></a>
+                                    <ul class="lvl-4-child">
+                                        <li><a href="">Link 1</a></li>
+                                        <li><a href="">Link 2</a></li>
+                                        <li><a href="">Link 3</a></li>
+                                        <li><a href="">Link 4</a></li>
+                                        <li><a href="">Link 5</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">Link 1</a></li>
+                                <li><a href="">Link 2</a></li>
+                                <li><a href="">Link 3</a></li>
+                                <li><a href="">Link 4</a></li>
+                                <li><a href="">Link 5</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Menu Level 2 <i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><a href="">Link 1</a></li>
+                        <li><a href="">Link 2</a></li>
+                        <li><a href="">Link 3</a></li>
+                        <li><a href="">Link 4</a></li>
+                        <li><a href="">Link 5</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">MEGA MENU <i class="fa-solid fa-chevron-down"></i></a></li>
+                <li class="main-mega-menu">
+                    <a href="#">MEGA MENU 2 <i class="fa-solid fa-chevron-down"></i></a>
+
+                    <div class="sub-main">
+                        <div class="sub-menu">
+                            <ul class="mega-menu">
+                                <li><a href="">TITLE NAME</a></li>
+                                <li><a href="">Link 1 </a> </li>
+                                <li><a href="">Link 2 </a> </li>
+                                <li><a href="">Link 3 </a> </li>
+                                <li><a href="">Link 4 </a> </li>
+                                <li><a href="">Link 5 </a> </li>
+                            </ul>
+                            <ul class="mega-menu">
+                                <li><a href="">TITLE NAME</a></li>
+                                <li><a href="">Link 1 </a> </li>
+                                <li><a href="">Link 2 </a> </li>
+                                <li><a href="">Link 3 </a> </li>
+                                <li><a href="">Link 4 </a> </li>
+                                <li><a href="">Link 5 </a> </li>
+                            </ul>
+                            <ul class="mega-menu">
+                                <li><a href="">TITLE NAME</a></li>
+                                <li><a href="">Link 1 </a> </li>
+                                <li><a href="">Link 2 </a> </li>
+                                <li><a href="">Link 3 </a> </li>
+                                <li><a href="">Link 4 </a> </li>
+                                <li><a href="">Link 5 </a> </li>
+                            </ul>
+                            <ul class="mega-menu">
+                                <li><a href="">TITLE NAME</a></li>
+                                <li><a href="">Link 1 </a> </li>
+                                <li><a href="">Link 2 </a> </li>
+                                <li><a href="">Link 3 </a> </li>
+                                <li><a href="">Link 4 </a> </li>
+                                <li><a href="">Link 5 </a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
