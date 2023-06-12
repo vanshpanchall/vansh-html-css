@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e310527c70.js" crossorigin="anonymous"></script>
+    <title>FLexStart</title>
+    <style>
+        button {
+            color: #fff;
+            background: #4154f1;
+            box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
+        }
+
+        section {
+            background: url(hero-bg.png) center no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .scale {
+            transition: .5s all ease;
+        }
+
+        .overflow-hidden:hover>.scale {
+            scale: 0.9;
+        }
+
+        button>i {
+            transition: all 0.4s ease;
+        }
+
+        button:hover>i {
+            transform: translateX(5px);
+        }
+
+        .rounded {
+            box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+        }
+
+        .mark {
+            transition: 0.5s all ease;
+            background-color: gainsboro;
+        }
+
+        .rounded:hover>.mark {
+            background-color: mediumblue;
+            color: white;
+        }
+
+        .border-3 {
+            transition: 0.3s all ease;
+        }
+
+        .border-3>span {
+            background-color: #feebd5;
+            border-radius: 5px;
+        }
+
+        .border-3>a {
+            color: orange;
+        }
+
+        .border-3:hover>span {
+            background-color: white;
+        }
+
+        .border-3:hover {
+            background-color: orange;
+            color: white;
+        }
+
+        .border-3:hover>a {
+            color: white;
+        }
+
+        .zoom {
+            transition: all 0.4s ease;
+        }
+
+        .zoom:hover {
+            scale: 1.05;
+            box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container navbar d-flex justify-content-between align-items-center fixed-top p-2">
+        <a class="navbar-brand fs-2 d-flex align-items-center text-primary" href="#">
+            <img src="logo.png" alt="Logo" class="img-fluid me-2">
+            FlexStart</a>
+        <ul class="navbar nav d-flex fs-5">
+            <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Service</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Team</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            <button type="button" class="btn btn-primary ms-2 mt-2">Get Started</button>
+        </ul>
+    </header>
+
+    <section class="d-flex align-items-center mb-5">
+        <div class="container ">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4">
+                    <h1 class="text-primary">We offer modern solutions for growing your business</h1>
+                    <h3 class="my-4 text-secondary">We are a team of talented designers making websites with Bootstrap
+                    </h3>
+                    <button type="button" class="btn btn-primary btn-lg">Get Started <i
+                            class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <div class="col-lg-6">
+                    <img src="hero-img.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-5">
+                <h5 class="text-info">WHO WE ARE</h5>
+                <h3 class="text-primary">Expedita voluptas omnis cupiditate totam eveniet nobis sint iste. Dolores est
+                    repellat corrupti reprehenderit.</h3>
+                <p class="my-4 fs-5">Quisquam vel ut sint cum eos hic dolores aperiam. Sed deserunt et. Inventore et et
+                    dolor consequatur itaque ut voluptate
+                    sed et. Magnam nam ipsum tenetur suscipit voluptatum nam et est corrupti.</p>
+                <button type="button" class="btn btn-primary btn-lg">Read More <i
+                        class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="col-lg-6">
+                <img src="about.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+    </main>
+
+    <div class="cards container text-center py-5">
+        <p>OUR VALUES</p>
+        <h1 class="text-primary">Odit est perspiciatis laborum et dicta</h1>
+        <div class="row mt-4">
+            <div class="col-lg-4 p-4 overflow-hidden">
+                <img src="values-1.png" alt="" class="img-fluid scale">
+                <h3 class="text-primary my-4">Ad cupiditate sed est odio</h3>
+                <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p>
+            </div>
+            <div class="col-lg-4 p-4 overflow-hidden">
+                <img src="values-2.png" alt="" class="img-fluid scale">
+                <h3 class="text-primary my-4">Ad cupiditate sed est odio</h3>
+                <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p>
+            </div>
+            <div class="col-lg-4 p-4 overflow-hidden">
+                <img src="values-3.png" alt="" class="img-fluid scale">
+                <h3 class="text-primary my-4">Ad cupiditate sed est odio</h3>
+                <p>Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit. Et veritatis id.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-3 d-flex rounded p-5">
+                <div class="fs-1 text-primary"><i class="fa-regular fa-face-smile"></i></div>
+                <div class="ms-4">
+                    <h1 class="text-primary">232</h1>
+                    <p>Happy Clients</p>
+                </div>
+            </div>
+            <div class="col-lg-3 d-flex rounded p-5">
+                <div class="fs-1 text-warning"><i class="fa-regular fa-address-book"></i></div>
+                <div class="ms-4">
+                    <h1 class="text-primary">521</h1>
+                    <p>Projects</p>
+                </div>
+            </div>
+            <div class="col-lg-3 d-flex rounded p-5">
+                <div class="fs-1 text-success"><i class="fa-solid fa-headset"></i></div>
+                <div class="ms-4">
+                    <h1 class="text-primary">1463</h1>
+                    <p>Hours of Support</p>
+                </div>
+            </div>
+            <div class="col-lg-3 d-flex rounded p-5">
+                <div class="fs-1 text-danger"><i class="fa-solid fa-user-group"></i></div>
+                <div class="ms-4">
+                    <h1 class="text-primary">15</h1>
+                    <p>Hard Workers</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center py-5">
+        <p class="m-0">FEATURES</p>
+        <h1 class="text-primary">Laboriosam et omnis fuga quis dolor direda fara</h1>
+        <div class="row mt-4 align-items-center">
+            <div class="col-lg-6 mb-4">
+                <img src="features.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-lg-6 p-4 mb-3 d-flex align-items-center rounded">
+                        <div class="mark py-1 px-2 rounded-1  me-2"><i class="fa-solid fa-check"></i>
+                        </div>
+                        <h5 class="text-primary">Eos aspernatur rem</h5>
+                    </div>
+                    <div class="col-lg-6 p-4 mb-3 d-flex align-items-center rounded">
+                        <div class="mark py-1 px-2 rounded-1  me-2"><i class="fa-solid fa-check"></i>
+                        </div>
+                        <h5 class="text-primary">Eos aspernatur rem</h5>
+                    </div>
+                    <div class="col-lg-6 p-4 mb-3 d-flex align-items-center rounded">
+                        <div class="mark py-1 px-2 rounded-1  me-2"><i class="fa-solid fa-check"></i>
+                        </div>
+                        <h5 class="text-primary">Eos aspernatur rem</h5>
+                    </div>
+                    <div class="col-lg-6 p-4 mb-3 d-flex align-items-center rounded">
+                        <div class="mark py-1 px-2 rounded-1  me-2"><i class="fa-solid fa-check"></i>
+                        </div>
+                        <h5 class="text-primary">Eos aspernatur rem</h5>
+                    </div>
+                    <div class="col-lg-6 p-4 mb-3 d-flex align-items-center rounded">
+                        <div class="mark py-1 px-2 rounded-1  me-2"><i class="fa-solid fa-check"></i>
+                        </div>
+                        <h5 class="text-primary">Eos aspernatur rem</h5>
+                    </div>
+                    <div class="col-lg-6 p-4 mb-3 d-flex align-items-center rounded">
+                        <div class="mark py-1 px-2 rounded-1 me-2"><i class="fa-solid fa-check"></i>
+                        </div>
+                        <h5 class="text-primary">Eos aspernatur rem</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-5">
+        <h2 class="text-primary mb-4 text-center">Ratione mollitia eos ab laudantium rerum beatae quo</h2>
+        <div class="row mt-4 align-items-center">
+            <div class="col-lg-4 mb-4">
+                <img src="features-3.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-lg-8">
+                <div class="row">
+                    <div class="col-lg-6 mb-4 d-flex ">
+                        <h1 class="me-3 text-primary"><i class="fa-solid fa-chart-line"></i></h1>
+                        <div>
+                            <h5>Corporis voluptates sit</h5>
+                            <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4 d-flex ">
+                        <h1 class="me-3 text-primary"><i class="fa-solid fa-chart-line"></i></h1>
+                        <div>
+                            <h5>Corporis voluptates sit</h5>
+                            <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4 d-flex ">
+                        <h1 class="me-3 text-primary"><i class="fa-solid fa-chart-line"></i></h1>
+                        <div>
+                            <h5>Corporis voluptates sit</h5>
+                            <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4 d-flex ">
+                        <h1 class="me-3 text-primary"><i class="fa-solid fa-chart-line"></i></h1>
+                        <div>
+                            <h5>Corporis voluptates sit</h5>
+                            <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4 d-flex ">
+                        <h1 class="me-3 text-primary"><i class="fa-solid fa-chart-line"></i></h1>
+                        <div>
+                            <h5>Corporis voluptates sit</h5>
+                            <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4 d-flex ">
+                        <h1 class="me-3 text-primary"><i class="fa-solid fa-chart-line"></i></h1>
+                        <div>
+                            <h5>Corporis voluptates sit</h5>
+                            <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center py-5">
+        <p class="m-0">SERVICES</p>
+        <h1 class="text-primary mb-4">Veritatis et dolores facere numquam et praesentium</h1>
+        <div class="row">
+            <div class="col-lg-4 mb-3 ">
+                <div class="rounded border-3 border-bottom border-warning py-5 px-3 ">
+                    <span class=" py-3 px-4 fs-1"><i class="fa-regular fa-message text-warning"></i></span>
+                    <h3 class="mt-4">Nesciunt Mete</h3>
+                    <p class="fs-5">Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus
+                        dolores
+                        iure perferendis tempore et
+                        consequatur.</p>
+                    <a href="" class="text-decoration-none">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-3 ">
+                <div class="rounded border-3 border-bottom border-warning py-5 px-3 ">
+                    <span class=" py-3 px-4 fs-1"><i class="fa-regular fa-message text-warning"></i></span>
+                    <h3 class="mt-4">Nesciunt Mete</h3>
+                    <p class="fs-5">Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus
+                        dolores
+                        iure perferendis tempore et
+                        consequatur.</p>
+                    <a href="" class="text-decoration-none">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-3 ">
+                <div class="rounded border-3 border-bottom border-warning py-5 px-3 ">
+                    <span class=" py-3 px-4 fs-1"><i class="fa-regular fa-message text-warning"></i></span>
+                    <h3 class="mt-4">Nesciunt Mete</h3>
+                    <p class="fs-5">Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus
+                        dolores
+                        iure perferendis tempore et
+                        consequatur.</p>
+                    <a href="" class="text-decoration-none">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-3 ">
+                <div class="rounded border-3 border-bottom border-warning py-5 px-3 ">
+                    <span class=" py-3 px-4 fs-1"><i class="fa-regular fa-message text-warning"></i></span>
+                    <h3 class="mt-4">Nesciunt Mete</h3>
+                    <p class="fs-5">Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus
+                        dolores
+                        iure perferendis tempore et
+                        consequatur.</p>
+                    <a href="" class="text-decoration-none">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-3 ">
+                <div class="rounded border-3 border-bottom border-warning py-5 px-3 ">
+                    <span class=" py-3 px-4 fs-1"><i class="fa-regular fa-message text-warning"></i></span>
+                    <h3 class="mt-4">Nesciunt Mete</h3>
+                    <p class="fs-5">Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus
+                        dolores
+                        iure perferendis tempore et
+                        consequatur.</p>
+                    <a href="" class="text-decoration-none">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-3 ">
+                <div class="rounded border-3 border-bottom border-warning py-5 px-3 ">
+                    <span class=" py-3 px-4 fs-1"><i class="fa-regular fa-message text-warning"></i></span>
+                    <h3 class="mt-4">Nesciunt Mete</h3>
+                    <p class="fs-5">Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus
+                        dolores
+                        iure perferendis tempore et
+                        consequatur.</p>
+                    <a href="" class="text-decoration-none">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-5 text-center">
+        <p class="m-1">PRICING</p>
+        <h2 class="text-primary mb-4">Check our Pricing</h2>
+        <div class="row">
+            <div class="col-lg-3 mb-3 zoom">
+                <div class="py-5 px-3 text-center">
+                    <h5 class="text-info">Free Plan</h5>
+                    <span>$ <span class="fs-1">0</span> /mo</span>
+                    <img src="pricing-free.png" alt="" class="img-fluid my-3">
+                    <p>Aida dere</p>
+                    <p>Aida dere</p>
+                    <p>Aida dere</p>
+                    <p>Nulla at volutpat dola</p>
+                    <p class="text-decoration-line-through">Massa ultricies mi</p>
+                    <button type="button" class="btn btn-outline-primary rounded-5 px-4 py-2 mt-3">Buy Now</button>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-3 zoom">
+                <div class="py-5 px-3 text-center">
+                    <h5 class="text-info">Starter Plan</h5>
+                    <span>$ <span class="fs-1">19</span> /mo</span>
+                    <img src="pricing-starter.png" alt="" class="img-fluid my-3">
+                    <p>Aida dere</p>
+                    <p>Aida dere</p>
+                    <p>Aida dere</p>
+                    <p>Nulla at volutpat dola</p>
+                    <p class="text-decoration-line-through">Massa ultricies mi</p>
+                    <button type="button" class="btn btn-outline-primary rounded-5 px-4 py-2 mt-3">Buy Now</button>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-3 zoom">
+                <div class="py-5 px-3 text-center">
+                    <h5 class="text-info">Business Plan</h5>
+                    <span>$ <span class="fs-1">29</span> /mo</span>
+                    <img src="pricing-business.png" alt="" class="img-fluid my-3">
+                    <p>Aida dere</p>
+                    <p>Aida dere</p>
+                    <p>Aida dere</p>
+                    <p>Nulla at volutpat dola</p>
+                    <p class="text-decoration-line-through">Massa ultricies mi</p>
+                    <button type="button" class="btn btn-outline-primary rounded-5 px-4 py-2 mt-3">Buy Now</button>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-3 zoom">
+                <div class="py-5 px-3 text-center">
+                    <h5 class="text-info">Ultimate Plan</h5>
+                    <span>$ <span class="fs-1">49</span> /mo</span>
+                    <img src="pricing-ultimate.png" alt="" class="img-fluid my-3">
+                    <p>Aida dere</p>
+                    <p>Aida dere</p>
+                    <p>Aida dere</p>
+                    <p>Nulla at volutpat dola</p>
+                    <p class="text-decoration-line-through">Massa ultricies mi</p>
+                    <button type="button" class="btn btn-outline-primary rounded-5 px-4 py-2 mt-3">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
