@@ -10,85 +10,8 @@
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/e310527c70.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
     <title>FLexStart</title>
-    <style>
-        button {
-            color: #fff;
-            background: #4154f1;
-            box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
-        }
-
-        section {
-            background: url(hero-bg.png) center no-repeat;
-            background-size: cover;
-            height: 100vh;
-        }
-
-        .scale {
-            transition: .5s all ease;
-        }
-
-        .overflow-hidden:hover>.scale {
-            scale: 0.9;
-        }
-
-        button>i {
-            transition: all 0.4s ease;
-        }
-
-        button:hover>i {
-            transform: translateX(5px);
-        }
-
-        .rounded {
-            box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-        }
-
-        .mark {
-            transition: 0.5s all ease;
-            background-color: gainsboro;
-        }
-
-        .rounded:hover>.mark {
-            background-color: mediumblue;
-            color: white;
-        }
-
-        .border-3 {
-            transition: 0.3s all ease;
-        }
-
-        .border-3>span {
-            background-color: #feebd5;
-            border-radius: 5px;
-        }
-
-        .border-3>a {
-            color: orange;
-        }
-
-        .border-3:hover>span {
-            background-color: white;
-        }
-
-        .border-3:hover {
-            background-color: orange;
-            color: white;
-        }
-
-        .border-3:hover>a {
-            color: white;
-        }
-
-        .zoom {
-            transition: all 0.4s ease;
-        }
-
-        .zoom:hover {
-            scale: 1.05;
-            box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
-        }
-    </style>
 </head>
 
 <body>
@@ -99,7 +22,7 @@
         <ul class="navbar nav d-flex fs-5">
             <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
             <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Service</a></li>
+            <li class="nav-item"><a href="#services" class="nav-link">Service</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Team</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
@@ -143,7 +66,7 @@
         </div>
     </main>
 
-    <div class="cards container text-center py-5">
+    <div class="cards container text-center py-5" id="services">
         <p>OUR VALUES</p>
         <h1 class="text-primary">Odit est perspiciatis laborum et dicta</h1>
         <div class="row mt-4">
@@ -378,7 +301,7 @@
                 <div class="py-5 px-3 text-center">
                     <h5 class="text-info">Free Plan</h5>
                     <span>$ <span class="fs-1">0</span> /mo</span>
-                    <img src="pricing-free.png" alt="" class="img-fluid my-3">
+                    <div><img src="pricing-free.png" alt="" class="img-fluid my-3"></div>
                     <p>Aida dere</p>
                     <p>Aida dere</p>
                     <p>Aida dere</p>
@@ -391,7 +314,7 @@
                 <div class="py-5 px-3 text-center">
                     <h5 class="text-info">Starter Plan</h5>
                     <span>$ <span class="fs-1">19</span> /mo</span>
-                    <img src="pricing-starter.png" alt="" class="img-fluid my-3">
+                    <div> <img src="pricing-starter.png" alt="" class="img-fluid my-3"></div>
                     <p>Aida dere</p>
                     <p>Aida dere</p>
                     <p>Aida dere</p>
@@ -404,7 +327,7 @@
                 <div class="py-5 px-3 text-center">
                     <h5 class="text-info">Business Plan</h5>
                     <span>$ <span class="fs-1">29</span> /mo</span>
-                    <img src="pricing-business.png" alt="" class="img-fluid my-3">
+                    <div><img src="pricing-business.png" alt="" class="img-fluid my-3"></div>
                     <p>Aida dere</p>
                     <p>Aida dere</p>
                     <p>Aida dere</p>
@@ -417,7 +340,7 @@
                 <div class="py-5 px-3 text-center">
                     <h5 class="text-info">Ultimate Plan</h5>
                     <span>$ <span class="fs-1">49</span> /mo</span>
-                    <img src="pricing-ultimate.png" alt="" class="img-fluid my-3">
+                    <div><img src="pricing-ultimate.png" alt="" class="img-fluid my-3"></div>
                     <p>Aida dere</p>
                     <p>Aida dere</p>
                     <p>Aida dere</p>
@@ -426,6 +349,318 @@
                     <button type="button" class="btn btn-outline-primary rounded-5 px-4 py-2 mt-3">Buy Now</button>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="container py-5 text-center">
+        <p class="m-0">PORTFOLIO</p>
+        <h2 class="text-primary">Check out latest work</h2>
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div class="portfolio-wrap">
+                    <img src="portfolio-1.jpg" alt="" class="img-fluid">
+                    <div class="info">
+                        <h4>Hello</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-4">
+                <div class="portfolio-wrap">
+                    <img src="portfolio-2.jpg" alt="" class="img-fluid">
+                    <div class="info">
+                        <h4>Hello</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-4">
+                <div class="portfolio-wrap">
+                    <img src="portfolio-3.jpg" alt="" class="img-fluid">
+                    <div class="info">
+                        <h4>Hello</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-4">
+                <div class="portfolio-wrap">
+                    <img src="portfolio-4.jpg" alt="" class="img-fluid">
+                    <div class="info">
+                        <h4>Hello</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-4">
+                <div class="portfolio-wrap">
+                    <img src="portfolio-5.jpg" alt="" class="img-fluid">
+                    <div class="info">
+                        <h4>Hello</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-4">
+                <div class="portfolio-wrap">
+                    <img src="portfolio-6.jpg" alt="" class="img-fluid">
+                    <div class="info">
+                        <h4>Hello</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-4">
+                <div class="portfolio-wrap">
+                    <img src="portfolio-7.jpg" alt="" class="img-fluid">
+                    <div class="info">
+                        <h4>Hello</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-4">
+                <div class="portfolio-wrap">
+                    <img src="portfolio-8.jpg" alt="" class="img-fluid">
+                    <div class="info">
+                        <h4>Hello</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mt-4">
+                <div class="portfolio-wrap">
+                    <img src="portfolio-9.jpg" alt="" class="img-fluid">
+                    <div class="info">
+                        <h4>Hello</h4>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-lg-4 mt-4"></div>
+            <div class="col-lg-4 mt-4"></div>
+            <div class="col-lg-4 mt-4"></div>
+            <div class="col-lg-4 mt-4"></div>
+            <div class="col-lg-4 mt-4"></div>
+            <div class="col-lg-4 mt-4"></div>
+            <div class="col-lg-4 mt-4"></div> -->
+        </div>
+    </div>
+
+    <div class="container py-5 text-center">
+        <p class="m-1">TEAM</p>
+        <h2 class="text-primary mb-4">Our hardworking team</h2>
+        <div class="row">
+            <div class="col-lg-3 mb-3">
+                <div class="text-center zoom rounded overflow-hidden">
+                    <div class="clip-img position-relative">
+                        <img src="team-1.jpg" alt="" class="img-fluid rounded">
+                        <div class="social px-2 py-1">
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info p-4">
+                        <h4 class="text-primary">Walter White</h4>
+                        <p class="text-secondary">Cheif Executive Officer</p>
+                        <p>Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit
+                            corporis. Voluptate sed
+                            quas reiciendis animi neque sapiente.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-3">
+                <div class="text-center zoom rounded overflow-hidden">
+                    <div class="clip-img position-relative">
+                        <img src="team-2.jpg" alt="" class="img-fluid rounded">
+                        <div class="social px-2 py-1">
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info p-4">
+                        <h4 class="text-primary">Walter White</h4>
+                        <p class="text-secondary">Cheif Executive Officer</p>
+                        <p>Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit
+                            corporis. Voluptate sed
+                            quas reiciendis animi neque sapiente.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-3">
+                <div class="text-center zoom rounded overflow-hidden">
+                    <div class="clip-img position-relative">
+                        <img src="team-3.jpg" alt="" class="img-fluid rounded">
+                        <div class="social px-2 py-1">
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info p-4">
+                        <h4 class="text-primary">Walter White</h4>
+                        <p class="text-secondary">Cheif Executive Officer</p>
+                        <p>Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit
+                            corporis. Voluptate sed
+                            quas reiciendis animi neque sapiente.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 mb-3">
+                <div class="text-center zoom rounded overflow-hidden">
+                    <div class="clip-img position-relative">
+                        <img src="team-4.jpg" alt="" class="img-fluid rounded">
+                        <div class="social px-2 py-1">
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-facebook"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-info p-4">
+                        <h4 class="text-primary">Walter White</h4>
+                        <p class="text-secondary">Cheif Executive Officer</p>
+                        <p>Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit
+                            corporis. Voluptate sed
+                            quas reiciendis animi neque sapiente.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container py-5">
+        <p class=" text-center ">BLOG</p>
+        <h1 class="text-primary text-center ">Recent posts from our blog</h1>
+        <div class="row mt-4">
+            <div class="col-lg-4">
+                <div class="rounded">
+                    <div class="overflow-hidden rounded">
+                        <img src="blog-1.jpg" alt="" class="img-fluid rounded zoom">
+                    </div>
+                    <div class="p-4 hov-text">
+                        <h5 class="text-secondary">Tue, September 15</h5>
+                        <h4 class="my-3">Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit</h4>
+                        <a href="" class="text-decoration-none">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="rounded">
+                    <div class="overflow-hidden rounded">
+                        <img src="blog-2.jpg" alt="" class="img-fluid rounded zoom">
+                    </div>
+                    <div class="p-4 hov-text">
+                        <h5 class="text-secondary">Tue, September 15</h5>
+                        <h4 class="my-3">Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit</h4>
+                        <a href="" class="text-decoration-none">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="rounded">
+                    <div class="overflow-hidden rounded">
+                        <img src="blog-3.jpg" alt="" class="img-fluid rounded zoom">
+                    </div>
+                    <div class="p-4 hov-text">
+                        <h5 class="text-secondary">Tue, September 15</h5>
+                        <h4 class="my-3">Eum ad dolor et. Autem aut fugiat debitis voluptatem consequuntur sit</h4>
+                        <a href="" class="text-decoration-none">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-5">
+        <p class="m-0 text-center">CONTACT</p>
+        <h2 class="text-primary text-center mb-3">Contact Us</h2>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-lg-6 p-4">
+                        <h1><i class="fa-solid fa-location-dot"></i></h1>
+                        <h5 class="text-primary my-3">Address</h5>
+                        <p>A108 Adam Street,<br>
+                            New York, NY 535022</p>
+                    </div>
+                    <div class="col-lg-6 p-4">
+                        <h1><i class="fa-solid fa-phone"></i>
+                            <h1>
+                                <h5 class="text-primary my-3">Call Us</h5>
+                                <p>A108 Adam Street,<br>
+                                    New York, NY 535022</p>
+                    </div>
+                    <div class="col-lg-6 p-4">
+                        <h1><i class="fa-regular fa-envelope"></i>
+                            <h1>
+                                <h5 class="text-primary my-3">Email Us</h5>
+                                <p>info@example.com <br>
+                                    contact@example.com</p>
+                    </div>
+                    <div class="col-lg-6 p-4">
+                        <h1><i class="fa-regular fa-clock"></i>
+                            <h1>
+                                <h5 class="text-primary my-3">Open Hours</h5>
+                                <p>Monday - Friday <br>
+                                    9:00AM - 05:00PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center">
+                <div class="row">
+                    <div class="col-lg-6 mt-4">
+                        <input type="text" name="" id="" placeholder="First Name" class="p-2 w-100">
+                    </div>
+                    <div class="col-lg-6 mt-4">
+                        <input type="text" name="" id="" placeholder="Last Name" class="p-2 w-100">
+                    </div>
+                    <div class="col-lg-12 mt-4">
+                        <input type="text" name="" id="" placeholder="Subject" class="p-2 w-100">
+                    </div>
+                    <div class="col-lg-12 my-4">
+                        <textarea name="" id="" cols="30" rows="5" class="p-3 w-100" placeholder="Message"></textarea>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary btn-lg">Send Message</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-primary-subtle py-5 border border-secondary-subtle border-end-0 border-start-0">
+        <div class="container text-center">
+            <h4 class="text-primary">Our Newsletter</h4>
+            <p class="mb-5">Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <div class="p-1 d-flex bg-white w-50 m-auto rounded-1">
+                <input type="text" name="" id="" class="w-100 border-0 me-2 p-2">
+                <button type="button" class="btn btn-primary btn-lg">Subscribe</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-img py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h1 class="text-primary"><img src="logo.png" alt="">Flexstart</h1>
+                    <p class="my-3">Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa
+                        magna derita valies darta donna mare
+                        fermentum iaculis eu non diam phasellus.</p>
+                    <div class="icons">
+                        <a href="" class="me-2"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="" class="me-2"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="" class="me-2"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="" class="me-2"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-primary-subtle py-4 border border-secondary-subtle border-end-0 border-start-0">
+        <div class="container text-center">
+            <p class="m-0">© Copyright <b>FlexStart</b>. All Rights Reserved
+                <br>
+                Designed by BootstrapMade
+            </p>
         </div>
     </div>
 </body>

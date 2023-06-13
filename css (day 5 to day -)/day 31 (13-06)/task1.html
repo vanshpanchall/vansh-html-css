@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <title>Task 1</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: indigo;
+        }
+
+        .hover>a {
+            color: white;
+            font-size: 3rem;
+        }
+
+        .hover {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hover::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: -30%;
+            width: 25%;
+            height: 100%;
+            background-color: orange;
+            transition: all 0.3s ease;
+            z-index: -1;
+        }
+
+        .hover::after {
+            content: "";
+            position: absolute;
+            top: -100%;
+            left: 25%;
+            width: 25%;
+            height: 100%;
+            background-color: orange;
+            transition: all 0.3s ease;
+            z-index: -1;
+        }
+
+        .div-1::before {
+            content: "";
+            position: absolute;
+            bottom: -100%;
+            left: 50%;
+            width: 25%;
+            height: 100%;
+            background-color: orange;
+            transition: all 0.3s ease;
+            z-index: -1;
+        }
+
+        .div-1::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: -30%;
+            width: 25%;
+            height: 100%;
+            background-color: orange;
+            transition: all 0.3s ease;
+            z-index: -1;
+        }
+
+        .hover:hover::before {
+            left: 0;
+        }
+
+        .hover:hover::after {
+            top: 0;
+        }
+
+        .hover:hover>.div-1::before {
+            bottom: 0;
+        }
+
+        .hover:hover>.div-1::after {
+            right: 0;
+        }
+    </style>
+</head>
+
+<body class="d-flex justify-content-center align-items-center">
+    <div class="hover py-4 px-5 border border-4 border-warning ">
+        <a href="" class="text-decoration-none">HOVER ME</a>
+        <div class="div-1"></div>
+    </div>
+</body>
+
+</html>
